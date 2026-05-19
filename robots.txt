@@ -1,0 +1,21 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /extranet/
+Disallow: /user_login_page.cfm
+Disallow: /vendor/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+Disallow: /extranet/
+Disallow: /user_login_page.cfm
+Disallow: /vendor/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /extranet/
+Disallow: /user_login_page.cfm
+Disallow: /vendor/
+
+Sitemap: https://gallart.com/sitemap.xml
