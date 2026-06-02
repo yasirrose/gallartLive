@@ -37,7 +37,6 @@
 </script>
 <!-- END ROBLY WIDGET CODE -->
 
-<script type='text/javascript' src='http://50.248.15.145:8001/jsv/SncViewer.js'></script>
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 	<tr>

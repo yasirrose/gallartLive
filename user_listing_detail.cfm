@@ -762,7 +762,7 @@
                                                 </div>
                                                 <div class="input-field">
                                                    <cfif fileexists("#expandpath('.')#/img/thumbnails/#detail.uid#.jpg")>
-                                                   <img src="http://#server_name#/img/#detail.uid#.jpg?u=#randrange(1,1000)#" style="width: 200px !important;">
+                                                   <img src="/img/#detail.uid#.jpg?u=#randrange(1,1000)#" style="width: 200px !important;">
                                                    </cfif>
                                                 </div>
                                                 <div class="input-button flex-input-btn listing-detail-btns">

@@ -21,9 +21,9 @@
                                              <div class="img-sec">
                                                 <!-- Dynamic image source -->
                                                 <cfif fileexists("http://#server_name#/img/#listings.uid#.jpg")>
-                                                   <img src="http://#server_name#/img/#uid#.jpg" alt="gallery-img">
+                                                   <img src="/img/#uid#.jpg" alt="gallery-img">
                                                 <cfelse>
-                                                   <img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+                                                   <img src="/img/thumbnails/noImage.jfif.jpeg">
                                                 </cfif>
                                                 
                                              </div>

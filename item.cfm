@@ -441,12 +441,12 @@
 																			<img src="/img/#productinfo.uid#.jpg?x=randrange(1,99)" alt="slider-gallery-img">
 																		</a>
 																	<cfelse>
-																		<a data-fancybox="slider-gallery" data-src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg" data-caption="Main Image">
-																			<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+																		<a data-fancybox="slider-gallery" data-src="/img/thumbnails/noImage.jfif.jpeg" data-caption="Main Image">
+																			<img src="/img/thumbnails/noImage.jfif.jpeg">
 																		</a>
 																	</cfif>
 
-																</div>
+																		</div>
 															</div>
 
 															<cfif isDefined("productinfo.additional_images") AND len(trim(productinfo.additional_images))>
@@ -465,8 +465,8 @@
 
 
 																		<cfelse>
-																			<a data-fancybox="slider-gallery" data-src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg" data-caption="Main Image">
-																				<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+																			<a data-fancybox="slider-gallery" data-src="/img/thumbnails/noImage.jfif.jpeg" data-caption="Main Image">
+																				<img src="/img/thumbnails/noImage.jfif.jpeg">
 																			</a>			
 																		</cfif>
 
@@ -506,7 +506,7 @@
 																		<cfif fileexists("http://#server_name#/img/#productinfo.uid#.jpg") >
 																			<img src="/img/#productinfo.uid#.jpg?x=randrange(1,99)" alt="gallery-img">
 																		<cfelse>
-																			<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">							
+																			<img src="/img/thumbnails/noImage.jfif.jpeg">
 																		</cfif>
 																	</div>
 															 	</div>
@@ -521,7 +521,7 @@
 																			<cfif fileexists("http://#server_name#/img/#additionalImage#")>
 																			<img src="/img/#additionalImage#?x=randrange(1,99)" alt="gallery-img">
 																			<cfelse>
-																			<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+																			<img src="/img/thumbnails/noImage.jfif.jpeg">
 																			</cfif>
 																		</div>
 																		</div>

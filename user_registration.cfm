@@ -731,8 +731,8 @@
 														  <div class="general-salaer-form">
 															 <cfoutput>
 																<div class="user-content">
-																   <h4 style="color: ##dd3a7d">SELL YOUR ART ON <a style="color: ##dd3a7d; font-size: 12pt; font-weight: bold;" href="http://gallart.com?xss=#xss#">GallArt.com</a></h4>
-																   <h5 style="color: ##dd3a7d">YOU can be a seller on <a style="color: ##dd3a7d; font-size: 10pt;" href="http://gallart.com?xss=#xss#">GallArt.com</a>!</h5>
+																   <h4 style="color: ##dd3a7d">SELL YOUR ART ON <a style="color: ##dd3a7d; font-size: 12pt; font-weight: bold;" href="/?xss=#xss#">GallArt.com</a></h4>
+																   <h5 style="color: ##dd3a7d">YOU can be a seller on <a style="color: ##dd3a7d; font-size: 10pt;" href="/?xss=#xss#">GallArt.com</a>!</h5>
 																   Here's how it works:<br>
 																   <ul>
 																	  <li>Fill out and submit the registration form below.</li>

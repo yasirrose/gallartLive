@@ -25,20 +25,18 @@
 		
 			<div class="featured-item">
 				<div class="featured-img">
-					<span itemprop="url">
-						<a href="/artists/#producturl#">
-							<cfset imgFile =  'http://#server_name#/img/thumbnails/' & uid &'.jpg' />
-							<cfif fileExists(imgFile)>
-								<span itemprop="image"><img src="http://#server_name#/img/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"></span>
-								<!--- <img src="http://#server_name#/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"> --->
-							<cfelse>
-								#artist_name#
-							</cfif>
-						</a>
-					</span>
+					<a href="/artists/#producturl#">
+						<cfset imgFile =  'http://#server_name#/img/thumbnails/' & uid &'.jpg' />
+						<cfif fileExists(imgFile)>
+							<img src="/img/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center">
+							<!--- <img src="http://#server_name#/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"> --->
+						<cfelse>
+							#artist_name#
+						</cfif>
+					</a>
 				</div>
-				<div class="featured-heading" itemscope itemtype="http://schema.org/ArtGallery">
-					<h5 itemprop="name">
+				<div class="featured-heading">
+					<h5>
 						<a href="/artists/#producturl#" >
 							<!--- <cfset capitalize_artistName = REReplace(artist_name, "\b([a-zA-Z])([a-zA-Z]*)", "\u\1\L\2", "ALL")> --->
 							#artist_name#</a>
@@ -80,7 +78,7 @@
 										<span itemprop="url"><a href="products.cfm?man=#manufacturer#<cfif parameterexists(xss)>&xss=#xss#</cfif>">
 										<cfset imgFile =  'http://#server_name#/img/thumbnails/' & uid &'.jpg' />
 										<cfif fileExists(imgFile)>
-											<span itemprop="image"><img src="http://#server_name#/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"></span>
+											<span itemprop="image"><img src="/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"></span>
 										<cfelse>
 											#artist_name#
 										</cfif>

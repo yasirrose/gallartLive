@@ -21,7 +21,7 @@
 <cfinclude template="meta.cfm">
 
 <cfoutput>
-<script language="JavaScript" src="http://#server_name#/js/utils.js"></script>
+<script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
@@ -75,7 +75,7 @@
 		</td>
 		<td valign="top" width="727" height="100%" style="padding-right: 10px;">
 			<br /><br />
-            <img src="http://3.235.23.60/images/red_dot.jpg">
+            <img src="/images/red_dot.jpg">
         </tr>
     </tbody>
 </table>
