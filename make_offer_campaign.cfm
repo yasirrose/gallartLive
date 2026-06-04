@@ -93,11 +93,11 @@
             <table width="650" height="30" border="0" align="center" cellspacing="0" cellpadding="0" id="Table_2">
                 <tbody>
                     <tr>
-                        <td height="40" align="center"><a href="tel:3059326166" title="Icon Bar - Telephone Number"> <img width="127" height="30" border="0" class="phoneicon" alt="" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_01.jpg" style="display:block;" /> </a></td>
-                        <td height="40" align="center"><img width="98" height="30" border="0" class="hide" alt="" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_02.jpg" style="display:block;" /></td>
-                        <td height="40" align="center"><a href="http://www.gallart.com" target="_blank" title="Icon Bar - GallArt.com"> <img width="151" height="30" border="0" class="webicon" alt="GallArt.com" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_03.jpg" style="display:block;" /> </a></td>
-                        <td height="40" align="center"><img width="95" height="30" border="0" class="hide" alt="" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_04.jpg" style="display:block;" /></td>
-                        <td height="40" align="center"><a target="_blank" title="Icon Bar - Ken Email" href="mailto:Sales@GallArt.com"> <img width="179" height="30" border="0" class="emailicon" alt="Email: Sales@GallArt.com" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_05.jpg" style="display:block;" /> </a></td>
+                        <td height="40" align="center"><a href="tel:3059326166" title="Icon Bar - Telephone Number"> <img width="127" height="30" border="0" class="phoneicon" alt="" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_01.jpg" style="display:block;" /> </a></td>
+                        <td height="40" align="center"><img width="98" height="30" border="0" class="hide" alt="" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_02.jpg" style="display:block;" /></td>
+                        <td height="40" align="center"><a href="https://gallart.com" target="_blank" title="Icon Bar - GallArt.com"> <img width="151" height="30" border="0" class="webicon" alt="GallArt.com" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_03.jpg" style="display:block;" /> </a></td>
+                        <td height="40" align="center"><img width="95" height="30" border="0" class="hide" alt="" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_04.jpg" style="display:block;" /></td>
+                        <td height="40" align="center"><a target="_blank" title="Icon Bar - Ken Email" href="mailto:Sales@GallArt.com"> <img width="179" height="30" border="0" class="emailicon" alt="Email: Sales@GallArt.com" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/icon-bar_05.jpg" style="display:block;" /> </a></td>
                     </tr>
                 </tbody>
             </table>
@@ -112,18 +112,18 @@
                                     <table width="700" height="139" border="0" align="center" cellspacing="0" cellpadding="0" id="Table_">
                                         <tbody>
                                             <tr>
-                                                <td colspan="6"><a target="_blank" href="http://www.gallart.com"> <img width="547" height="109" border="0" alt="Gallery Art " src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_01.jpg" style="display:block" /> </a></td>
-                                                <td colspan="2"><a href="mailto:websitegallart@gallart.com"> <img width="153" height="109" border="0" alt="EMAIL US" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_02.jpg" style="display:block" /> </a></td>
+                                                <td colspan="6"><a target="_blank" href="https://gallart.com"> <img width="547" height="109" border="0" alt="Gallery Art " src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_01.jpg" style="display:block" /> </a></td>
+                                                <td colspan="2"><a href="mailto:websitegallart@gallart.com"> <img width="153" height="109" border="0" alt="EMAIL US" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_02.jpg" style="display:block" /> </a></td>
                                             </tr>
                                             <tr>
-                                                <td><a href="http://www.gallart.com"> <img width="59" height="30" border="0" alt="HOME" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_03.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/user_registration.cfm"> <img width="107" height="30" border="0" alt="SELL YOUR ART" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_04.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/alerts.cfm"> <img width="63" height="30" border="0" alt="ALERTS" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_05.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/new_listings.cfm"> <img width="154" height="30" border="0" alt="RECENT ACQUISITIONS" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_06.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/classifieds.cfm"> <img width="96" height="30" border="0" alt="CLASSIFIEDS" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_07.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/featured_events.cfm"> <img width="68" height="30" border="0" alt="EVENTS" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_08.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/sales.cfm"> <img width="53" height="30" border="0" alt="SALES" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_09.jpg" style="display:block" /> </a></td>
-                                                <td><a href="http://gallart.com/guests.cfm"> <img width="100" height="30" border="0" alt="GUEST BOOK" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_10.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com"> <img width="59" height="30" border="0" alt="HOME" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_03.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/user_registration.cfm"> <img width="107" height="30" border="0" alt="SELL YOUR ART" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_04.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/alerts.cfm"> <img width="63" height="30" border="0" alt="ALERTS" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_05.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/new_listings.cfm"> <img width="154" height="30" border="0" alt="RECENT ACQUISITIONS" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_06.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/classifieds.cfm"> <img width="96" height="30" border="0" alt="CLASSIFIEDS" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_07.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/featured_events.cfm"> <img width="68" height="30" border="0" alt="EVENTS" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_08.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/sales.cfm"> <img width="53" height="30" border="0" alt="SALES" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_09.jpg" style="display:block" /> </a></td>
+                                                <td><a href="https://gallart.com/guests.cfm"> <img width="100" height="30" border="0" alt="GUEST BOOK" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/newhead_10.jpg" style="display:block" /> </a></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -131,44 +131,44 @@
                                     <table id="Table_01" height="1049" width="700" border="0" cellpadding="0" cellspacing="0">
                                         <tbody>
                                             <tr>
-                                                <td colspan="4"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_01.jpg" alt="Gallery Art and Chai Lifeline Present" height="64" width="700" border="0"></td>
+                                                <td colspan="4"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_01.jpg" alt="Gallery Art and Chai Lifeline Present" height="64" width="700" border="0"></td>
                                             </tr>
                                             <tr>
-                                                <td colspan="3" rowspan="4"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_02.jpg" alt="" height="496" width="408" border="0"></td>
-                                                <td><a id="LID239030" href="http://www.beargivers.org/"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_03.jpg" alt="A $50 Donation per couple is recommended" height="74" width="292" border="0"></a></td>
+                                                <td colspan="3" rowspan="4"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_02.jpg" alt="" height="496" width="408" border="0"></td>
+                                                <td><a id="LID239030" href="http://www.beargivers.org/"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_03.jpg" alt="A $50 Donation per couple is recommended" height="74" width="292" border="0"></a></td>
                                             </tr>
                                             <tr>
-                                                <td><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_04.jpg" alt="Through the Eyes of Our Children" height="157" width="292" border="0"></td>
+                                                <td><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_04.jpg" alt="Through the Eyes of Our Children" height="157" width="292" border="0"></td>
                                             </tr>
                                             <tr>
-                                                <td><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_05.jpg" alt="A Celebration of Expression!
+                                                <td><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_05.jpg" alt="A Celebration of Expression!
                                                 Featuring Artwork by Chai Lifeline Southeast Children and their Siblings Impacted by Serious Illness." height="140" width="292" border="0"></td>
                                             </tr>
                                             <tr>
-                                                <td><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_06.jpg" alt="Saturday Evening
+                                                <td><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_06.jpg" alt="Saturday Evening
                                                 November 22, 2014
                                                 8:00pm" height="125" width="292" border="0"></td>
                                             </tr>
                                             <tr>
-                                                <td colspan="4"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_07.jpg" alt="at Gallery Art
+                                                <td colspan="4"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_07.jpg" alt="at Gallery Art
                                                 20633 Biscayne Blvd.
                                                 Aventure, FL 33180" height="51" width="700" border="0"></td>
                                             </tr>
                                             <tr>
-                                                <td colspan="3"><a id="LID239031" href="http://gallart.com/"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_08.jpg" alt="One Night Only Exhibition & Sale
+                                                <td colspan="3"><a id="LID239031" href="https://gallart.com/"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_08.jpg" alt="One Night Only Exhibition & Sale
                                                 &quot;The Children's Art&quot;
                                                 100% of the proceeds from &quot;The Children's Art&quot; Sale will benefit Chai Lifeline Southeast's therapeutic and recreational programs for seriously ill children and their families." height="337" width="408" border="0"></a></td>
-                                                <td><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_09.jpg" alt="" height="337" width="292" border="0"></td>
+                                                <td><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_09.jpg" alt="" height="337" width="292" border="0"></td>
                                             </tr>
                                             <tr>
-                                                <td><a id="LID239032" href="http://www.chailifeline.org/"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_10.jpg" alt="Chai Lifeline" height="30" width="132" border="0"></a></td>
-                                                <td><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_11.jpg" alt="" height="30" width="76" border="0"></td>
-                                                <td><a id="LID239033" href="http://www.chailifeline.org/"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_12.jpg" alt="Chai Crafts" height="30" width="200" border="0"></a></td>
-                                                <td><a id="LID239034" href="http://www.beargivers.org/"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_13.jpg" alt="Bear Givers" height="30" width="292" border="0"></a></td>
+                                                <td><a id="LID239032" href="http://www.chailifeline.org/"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_10.jpg" alt="Chai Lifeline" height="30" width="132" border="0"></a></td>
+                                                <td><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_11.jpg" alt="" height="30" width="76" border="0"></td>
+                                                <td><a id="LID239033" href="http://www.chailifeline.org/"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_12.jpg" alt="Chai Crafts" height="30" width="200" border="0"></a></td>
+                                                <td><a id="LID239034" href="http://www.beargivers.org/"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_13.jpg" alt="Bear Givers" height="30" width="292" border="0"></a></td>
                                             </tr>
                                             <tr>
-                                                <td colspan="3"><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_14.jpg" alt="" height="71" width="408" border="0"></td>
-                                                <td><img style="display:block" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_15.jpg" alt="" height="71" width="292" border="0"></td>
+                                                <td colspan="3"><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_14.jpg" alt="" height="71" width="408" border="0"></td>
+                                                <td><img style="display:block" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/pcard_15.jpg" alt="" height="71" width="292" border="0"></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -184,15 +184,15 @@
                                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; border:0px; margin:0px; font:9px Tahoma, Geneva, sans-serif;">
                                                     <tbody>
                                                         <tr>
-                                                            <td align="center"><a target="_blank" title="Facebook Icon" href="https://www.facebook.com/pages/GallArt/119056118127427"> <img border="0" style="display:block" class="icon" alt="Facebook Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-facebook-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="Twitter Icon" href="https://twitter.com/GallArt_com"> <img border="0" style="display:block" class="icon" alt="Twitter Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-twitter-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="GallArt.com Website Icon" href="http://gallart.com/index.cfm"> <img border="0" style="display:block" class="icon" alt="GallArt.com Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-gallart-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="Email Ken Icon" href="mailto:Ken@GallArt.com"> <img border="0" style="display:block" class="icon" alt="Email Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-mail-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="Instagram Icon" href="http://instagram.com/gallartdotcom"> <img border="0" style="display:block" class="icon" alt="Instagram Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-instagram-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="Tumblr Icon" href="http://gallartcom.tumblr.com/"> <img border="0" style="display:block" class="icon" alt="Tumblr Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-tumblr-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="Pinterest Icon" href="http://www.pinterest.com/gallartcom/"> <img border="0" style="display:block" class="icon" alt="Pinterest Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-pinterest-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="LinkedIn Icon" href="https://www.linkedin.com/profile/view?id=57648280"> <img border="0" style="display:block" class="icon" alt="LinkedIn Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-linkedin-m.png" /> </a></td>
-                                                            <td align="center"><a target="_blank" title="Google Plus Icon" href="https://plus.google.com/u/0/100061127067895667263/posts"> <img border="0" style="display:block" class="icon" alt="Google Plus Icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-googleplus-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Facebook Icon" href="https://www.facebook.com/pages/GallArt/119056118127427"> <img border="0" style="display:block" class="icon" alt="Facebook Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-facebook-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Twitter Icon" href="https://twitter.com/GallArt_com"> <img border="0" style="display:block" class="icon" alt="Twitter Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-twitter-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="GallArt.com Website Icon" href="https://gallart.com/index.cfm"> <img border="0" style="display:block" class="icon" alt="GallArt.com Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-gallart-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Email Ken Icon" href="mailto:Ken@GallArt.com"> <img border="0" style="display:block" class="icon" alt="Email Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-mail-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Instagram Icon" href="http://instagram.com/gallartdotcom"> <img border="0" style="display:block" class="icon" alt="Instagram Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-instagram-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Tumblr Icon" href="http://gallartcom.tumblr.com/"> <img border="0" style="display:block" class="icon" alt="Tumblr Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-tumblr-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Pinterest Icon" href="http://www.pinterest.com/gallartcom/"> <img border="0" style="display:block" class="icon" alt="Pinterest Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-pinterest-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="LinkedIn Icon" href="https://www.linkedin.com/profile/view?id=57648280"> <img border="0" style="display:block" class="icon" alt="LinkedIn Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-linkedin-m.png" /> </a></td>
+                                                            <td align="center"><a target="_blank" title="Google Plus Icon" href="https://plus.google.com/u/0/100061127067895667263/posts"> <img border="0" style="display:block" class="icon" alt="Google Plus Icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-googleplus-m.png" /> </a></td>
                                                         </tr>
                                                         <tr>
                                                             <td align="center">Facebook</td>
@@ -225,75 +225,75 @@
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px solid #666; font:11px Tahoma, Geneva, sans-serif;">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="font-size:0px;"><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
-                                                                        <td style="font-size:0px;"><a href=""> <img border="0" style="display:block" class="icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-mail-s.png" alt="" /> </a></td>
+                                                                        <td style="font-size:0px;"><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td style="font-size:0px;"><a href=""> <img border="0" style="display:block" class="icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-mail-s.png" alt="" /> </a></td>
                                                                         <td>Forward</td>
-                                                                        <td><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                             </td>
-                                                            <td><img width="15" height="15" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
+                                                            <td><img width="15" height="15" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
                                                             <td>
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px solid #666; font:11px Tahoma, Geneva, sans-serif;">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="font-size:0px;"><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
-                                                                        <td style="font-size:0px;"><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fbsfurl.com%2f1pAgR/2fK/2iE&amp;t=GALLART.COM+%3c%3e+END+OF+SUMMER+%3c%3e+CLEARANCE+%3c%3e+SALE+%3c%3e+DALI+%3c%3e+ERTE+%3c%3e+KAUFMAN+%3c%3e+MAX+%3c%3e+NEIMAN+%3c%3e+TARKAY+%3c%3e+AND+MANY+MORE+%3c%3e"> <img border="0" style="display:block" class="icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-facebook-s.png" alt="" /> </a></td>
+                                                                        <td style="font-size:0px;"><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td style="font-size:0px;"><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fbsfurl.com%2f1pAgR/2fK/2iE&amp;t=GALLART.COM+%3c%3e+END+OF+SUMMER+%3c%3e+CLEARANCE+%3c%3e+SALE+%3c%3e+DALI+%3c%3e+ERTE+%3c%3e+KAUFMAN+%3c%3e+MAX+%3c%3e+NEIMAN+%3c%3e+TARKAY+%3c%3e+AND+MANY+MORE+%3c%3e"> <img border="0" style="display:block" class="icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-facebook-s.png" alt="" /> </a></td>
                                                                         <td>Share</td>
-                                                                        <td><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                             </td>
-                                                            <td><img width="15" height="15" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
+                                                            <td><img width="15" height="15" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
                                                             <td>
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px solid #666; font:11px Tahoma, Geneva, sans-serif;">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="font-size:0px;"><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
-                                                                        <td style="font-size:0px;"><a href="http://twitter.com/intent/tweet?status=GALLART.COM+%3c%3e+END+OF+SUMMER+%3c%3e+CLEARANCE+%3c%3e+SALE+%3c%3e+DALI+%3c%3e+ERTE+%3c%3e+KAUFMAN+%3c%3e+MAX+%3c%3e+NEIMAN+%3c%3e+TARKAY+%3c%3e+AND+MANY+MORE+%3c%3e%20http%3a%2f%2fbsfurl.com%2f1pAgT/2fK/2iE"> <img border="0" style="display:block" class="icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-twitter-s.png" alt="" /> </a></td>
+                                                                        <td style="font-size:0px;"><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td style="font-size:0px;"><a href="http://twitter.com/intent/tweet?status=GALLART.COM+%3c%3e+END+OF+SUMMER+%3c%3e+CLEARANCE+%3c%3e+SALE+%3c%3e+DALI+%3c%3e+ERTE+%3c%3e+KAUFMAN+%3c%3e+MAX+%3c%3e+NEIMAN+%3c%3e+TARKAY+%3c%3e+AND+MANY+MORE+%3c%3e%20http%3a%2f%2fbsfurl.com%2f1pAgT/2fK/2iE"> <img border="0" style="display:block" class="icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-twitter-s.png" alt="" /> </a></td>
                                                                         <td>Tweet</td>
-                                                                        <td><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                             </td>
-                                                            <td><img width="15" height="15" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
+                                                            <td><img width="15" height="15" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
                                                             <td>
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px solid #666; font:11px Tahoma, Geneva, sans-serif;">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="font-size:0px;"><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
-                                                                        <td style="font-size:0px;"><a href="http://www.pinterest.com/gallartcom/"> <img border="0" style="display:block" class="icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-pinterest-s.png" alt="" /> </a></td>
+                                                                        <td style="font-size:0px;"><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td style="font-size:0px;"><a href="http://www.pinterest.com/gallartcom/"> <img border="0" style="display:block" class="icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-pinterest-s.png" alt="" /> </a></td>
                                                                         <td>Pin&nbsp;It</td>
-                                                                        <td><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                             </td>
-                                                            <td><img width="15" height="15" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
+                                                            <td><img width="15" height="15" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
                                                             <td>
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px solid #666; font:11px Tahoma, Geneva, sans-serif;">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="font-size:0px;"><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
-                                                                        <td style="font-size:0px;"><a href="http://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;url=http%3a%2f%2fbsfurl.com%2f1pAgU/2fK/2iE&amp;armin=armin&amp;title=GALLART.COM+%3c%3e+END+OF+SUMMER+%3c%3e+CLEARANCE+%3c%3e+SALE+%3c%3e+DALI+%3c%3e+ERTE+%3c%3e+KAUFMAN+%3c%3e+MAX+%3c%3e+NEIMAN+%3c%3e+TARKAY+%3c%3e+AND+MANY+MORE+%3c%3e"> <img border="0" style="display:block" class="icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-LinkedIn-s.png" alt="" /> </a></td>
+                                                                        <td style="font-size:0px;"><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td style="font-size:0px;"><a href="http://www.linkedin.com/shareArticle?mini=true&amp;ro=true&amp;url=http%3a%2f%2fbsfurl.com%2f1pAgU/2fK/2iE&amp;armin=armin&amp;title=GALLART.COM+%3c%3e+END+OF+SUMMER+%3c%3e+CLEARANCE+%3c%3e+SALE+%3c%3e+DALI+%3c%3e+ERTE+%3c%3e+KAUFMAN+%3c%3e+MAX+%3c%3e+NEIMAN+%3c%3e+TARKAY+%3c%3e+AND+MANY+MORE+%3c%3e"> <img border="0" style="display:block" class="icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-LinkedIn-s.png" alt="" /> </a></td>
                                                                         <td>Share</td>
-                                                                        <td><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
                                                             </td>
-                                                            <td><img width="15" height="15" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
+                                                            <td><img width="15" height="15" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/15x15.png" alt="" /></td>
                                                             <td style="font-size:0px;">
                                                             <table width="100%" border="0" cellspacing="0" cellpadding="3" style="border:1px solid #666; font:11px Tahoma, Geneva, sans-serif;">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td style="font-size:0px;"><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
-                                                                        <td style="font-size:0px;"><a href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http%3a%2f%2fbsfurl.com%2f1pAgS/2fK/2iE"> <img border="0" style="display:block" class="icon" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-googleplus-s.png" alt="" /> </a></td>
+                                                                        <td style="font-size:0px;"><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td style="font-size:0px;"><a href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url=http%3a%2f%2fbsfurl.com%2f1pAgS/2fK/2iE"> <img border="0" style="display:block" class="icon" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/fc-webicon-googleplus-s.png" alt="" /> </a></td>
                                                                         <td>Share</td>
-                                                                        <td><img width="5" height="5" src="/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
+                                                                        <td><img width="5" height="5" src="https://gallart.com/EMAIL_TEMPLATES/CHAI_LIFELINE/images/5x5.png" style="display:block;" alt="" /></td>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
