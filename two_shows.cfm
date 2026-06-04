@@ -9,7 +9,7 @@
 <cfinclude template="meta.cfm">
 
 <cfoutput>
-<script language="JavaScript" src="http://#server_name#/js/utils.js"></script>
+<script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 
 <cfquery name="getPages" datasource="#dsource#" dbtype="ODBC" username="#uname#" password="#pword#">

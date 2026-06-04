@@ -7,10 +7,10 @@
       </cfoutput>
       <cfinclude template="meta.cfm">
       <cfoutput>
-         <script language="JavaScript" src="http://#server_name#/js/utils.js"></script>
-         <script language="JavaScript" src="http://#server_name#/js/jquery-1.2.6.min.js"></script>
-         <script language="JavaScript" src="http://#server_name#/js/slimbox2.js"></script>
-         <link href="http://#server_name#/css/slimbox2.css" rel="stylesheet" type="text/css">
+         <script language="JavaScript" src="/js/utils.js"></script>
+         <script language="JavaScript" src="/js/jquery-1.2.6.min.js"></script>
+         <script language="JavaScript" src="/js/slimbox2.js"></script>
+         <link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
          <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -174,8 +174,8 @@
                                                       <cfform action="" method="post" name="frm1">
                                                          <cfset imgFile = expandpath('.') & '\img\' & productinfo.uid &'.jpg' />
                                                          <cfif fileExists(imgFile)>
-                                                            <img src="http://#server_name#/img/#productinfo.uid#.jpg" border="2" width="300"><br>
-                                                            <a href="http://#server_name#/img/#productinfo.uid#.jpg" rel="lightbox">[CLICK]</a> to view large image size in separate window.
+                                                            <img src="/img/#productinfo.uid#.jpg" border="2" width="300"><br>
+                                                            <a href="/img/#productinfo.uid#.jpg" rel="lightbox">[CLICK]</a> to view large image size in separate window.
                                                          </cfif>
                                                          <div class="row">
                                                             <div class="col-md-6">
@@ -266,7 +266,7 @@
                                           </cfif>							
                                           <A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artistname=#urlencodedformat(trim(artist_name_url))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">
                                           <cfif fileExists(thisFile)>
-                                          <img src="http://#server_name#/img/thumbnails/#similar.uid#.jpg" alt="#ucase(similar.manufacturer)# - #similar.name#" border="1">
+                                          <img src="/img/thumbnails/#similar.uid#.jpg" alt="#ucase(similar.manufacturer)# - #similar.name#" border="1">
                                           <cfelse>
                                           #ucase(similar.manufacturer)# - #similar.name#
                                           </cfif>

@@ -93,7 +93,7 @@
             <IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#trim(modelno)#" align="Center">
             <cfelse>
                 <!--- <img src="https://dummyimage.com/150x100/050005/ededf2.png&text=No+Image+Available+"> --->
-                <img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+                <img src="/img/thumbnails/noImage.jfif.jpeg">
         </cfif>   
         </A>
         <Br>

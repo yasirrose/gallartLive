@@ -271,7 +271,7 @@
 																		<cfif fileexists("http://#server_name#/img/thumbnails/#wishlistData.uid#.jpg")> 
 																			<IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#wishlistData.uid#" align="Center" style="max-height: 100px;">
 																			<cfelse>
-																				<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+																				<img src="/img/thumbnails/noImage.jfif.jpeg">
 																		</cfif>
 																	</td>
 																	<td align="center" valign="middle">
@@ -351,7 +351,7 @@
 																		<cfif fileexists("http://#server_name#/img/thumbnails/#getSellerRecord.uid#.jpg")> 
 																			<IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#getSellerRecord.uid#" align="Center">
 																			<cfelse>
-																				<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+																				<img src="/img/thumbnails/noImage.jfif.jpeg">
 																		</cfif>
 																	</td>
 																	<td align="center" valign="middle">#dollarformat(gallery_price)#</td>

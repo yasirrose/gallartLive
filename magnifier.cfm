@@ -8,8 +8,8 @@
 <meta name="keywords" content="magento,javascript,js,zoom,zoomer,image zoom,magnify,magifier" />
 <meta name="author" content="Huy Dinh" />
 <!--<link type="text/css" rel="stylesheet" href="http://www.huydinh.co.uk/demo/magnifier/css/magnifier.css" media="all"></link>-->
-<script type="text/javascript" src="http://www.huydinh.co.uk/demo/magnifier/js/jquery-1.2.6.min.js"></script>
-<script type="text/javascript" src="http://www.huydinh.co.uk/demo/magnifier/js/magnifier.js"></script>
+<script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="/js/magnifier.js"></script>
 
 <style type="text/css">
 p {
@@ -53,8 +53,8 @@ p {
 
 <cfinclude template="meta.cfm">
 <!--<link type="text/css" rel="stylesheet" href="http://www.huydinh.co.uk/demo/magnifier/css/magnifier.css" media="all"></link>-->
-<script type="text/javascript" src="http://www.huydinh.co.uk/demo/magnifier/js/jquery-1.2.6.min.js"></script>
-<script type="text/javascript" src="http://www.huydinh.co.uk/demo/magnifier/js/magnifier.js"></script>
+<script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="/js/magnifier.js"></script>
 
 <style type="text/css">
 p {
@@ -79,11 +79,11 @@ p {
 </script>
 <!---
 <cfoutput>
-<script language="JavaScript" src="http://#server_name#/js/utils.js"></script>
-<script language="JavaScript" src="http://#server_name#/js/jquery-1.2.6.min.js"></script>
-<script language="JavaScript" src="http://#server_name#/js/magnifier.js"></script>
-<script language="JavaScript" src="http://#server_name#/js/slimbox2.js"></script>
-<link href="http://#server_name#/css/slimbox2.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="/js/utils.js"></script>
+<script language="JavaScript" src="/js/jquery-1.2.6.min.js"></script>
+<script language="JavaScript" src="/js/magnifier.js"></script>
+<script language="JavaScript" src="/js/slimbox2.js"></script>
+<link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
 </cfoutput>
 
 <script type="text/javascript">
@@ -114,7 +114,7 @@ p {
 
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<p><img alt="car" src="http://www.geekologie.com/2007/12/07/future-car-1.jpg" id="auto"/></p>
+<p><img alt="Artwork" src="/img/11913.jpg" id="auto"/></p>
 <!---<p><img alt="Earth" src="http://www.huydinh.co.uk/demo/magnifier/img/Earth.jpg" id="image"/></p>--->
 <!---<cfoutput>
 <p><img src="http://#server_name#/img/11913.jpg" border="2" width="300"></p>

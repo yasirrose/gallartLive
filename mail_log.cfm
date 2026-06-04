@@ -93,7 +93,7 @@ font-size:1em;
 							</tr>
 							<tr>
 								<td colspan="2">
-									<img src="http://www.gallart.com/img/thumbnails/12856.jpg" width="100" border="0">
+									<img src="/img/thumbnails/12856.jpg" width="100" border="0">
 								</td>
 							</tr>
 						</table>

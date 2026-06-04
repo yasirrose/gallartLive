@@ -138,10 +138,10 @@
             <div class="list-item">
                 <a href="/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#" class="add-hover">
                     <cfif fileexists("http://#server_name#/img/thumbnails/#uid#.jpg")>
-                        <img src="http://#server_name#/img/#uid#.jpg" alt="#name#" title="#name#" border="0" align="center">
+                        <img src="/img/#uid#.jpg" alt="#name#" title="#name#" border="0" align="center">
                     <cfelse>
                       
-						<img src="http://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+						<img src="/img/thumbnails/noImage.jfif.jpeg">
                     </cfif>  
                 </a>
                 <div class="product-name" style="font-weight: 600;">

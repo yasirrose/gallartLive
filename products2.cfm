@@ -9,7 +9,7 @@
 <cfinclude template="meta.cfm">
 
 <cfoutput>
-<script language="JavaScript" src="http://#server_name#/js/utils.js"></script>
+<script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
@@ -212,7 +212,7 @@
 								<td align="center">
 									<A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(manufacturer)#&artistname=#urlencodedformat(trim(artist_name_url))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">
 									<cfif fileexists("#expandpath('.')#\img\#uid#.jpg")>
-										<img src="http://#server_name#/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center">
+										<img src="/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center">
 									<cfelse>
 										<div align="center" style="padding: 20px;">NO IMAGE AVAILABLE</div>
 									</cfif>	

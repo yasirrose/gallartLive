@@ -18,8 +18,8 @@
 			<div class="featured-item">
 				<div class="featured-img">
 					<A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(trim(replace(manufacturer,"'",'')))#&artistname=#urlencodedformat(trim(replace(artist_name_url,"'",'')))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">
-						<img src="http://#server_name#/img/#uid#.jpg" alt="#ucase(manufacturer)# - #name#" border="0" align="center">
-						<!--- http://#server_name#/img/thumbnails/#uid#.jpg --->
+						<img src="/img/#uid#.jpg" alt="#ucase(manufacturer)# - #name#" border="0" align="center">
+						<!--- /img/thumbnails/#uid#.jpg --->
 					</A>
 				</div>
 				<div class="featured-heading">
@@ -56,7 +56,7 @@
 				<tr>
 					<td valign="top" align="Center">
 						<A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(trim(replace(manufacturer,"'",'')))#&artistname=#urlencodedformat(trim(replace(artist_name_url,"'",'')))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">
-							<img src="http://#server_name#/img/thumbnails/#uid#.jpg" alt="#ucase(manufacturer)# - #name#" border="0" align="center">
+							<img src="/img/thumbnails/#uid#.jpg" alt="#ucase(manufacturer)# - #name#" border="0" align="center">
 						</A><br>
 						<A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(trim(replace(manufacturer,"'",'')))#&artistname=#urlencodedformat(trim(replace(artist_name_url,"'",'')))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">#ucase(Name)#</a>
 						<h1>#ucase(artist_name)#</h1><br>
