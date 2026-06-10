@@ -1,21 +1,23 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /extranet/
-Disallow: /user_login_page.cfm
 Disallow: /vendor/
+Disallow: /user_login_page.cfm
+Disallow: /sign_in.cfm
+Disallow: /checkout.cfm
+Disallow: /checkout_new.cfm
+Disallow: /review.cfm
+Disallow: /overview.cfm
+Disallow: /user_listing_detail.cfm
+Disallow: /user_listing_results.cfm
+Disallow: /user_listing_search.cfm
+Disallow: /mail_log.cfm
+Disallow: /forgot_password.cfm
 
 User-agent: OAI-SearchBot
 Allow: /
-Disallow: /admin/
-Disallow: /extranet/
-Disallow: /user_login_page.cfm
-Disallow: /vendor/
 
 User-agent: PerplexityBot
 Allow: /
-Disallow: /admin/
-Disallow: /extranet/
-Disallow: /user_login_page.cfm
-Disallow: /vendor/
 
 Sitemap: https://gallart.com/sitemap.xml

@@ -12,7 +12,7 @@
 	WHERE pk_pages = 3
 </cfquery>
 
-<html>
+<html lang="en">
 <head>
 <cfoutput>
 <title>#companyname# - #titletext#</title>

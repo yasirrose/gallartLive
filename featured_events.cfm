@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <cfparam name="xss" default="">
-<html>
+<html lang="en">
    <head>
       <cfoutput>
          <title>#companyname# - #titletext#</title>

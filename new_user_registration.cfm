@@ -165,7 +165,7 @@
 	WHERE pk_pages = 6
 </cfquery>
 
-<html>
+<html lang="en">
 <head>
 <cfoutput>
 <title>#companyname# - #titletext#</title>

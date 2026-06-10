@@ -169,11 +169,19 @@
 
 <script type="application/ld+json">
 {
-	"@context": "https://schema.org",
-	"@type": "Organization",
+	"@type": "LocalBusiness",
 	"name": "#JSStringFormat(application.siteName)#",
 	"url": "#JSStringFormat(application.siteCanonicalBaseUrl)#",
 	"logo": "#JSStringFormat(application.siteCanonicalBaseUrl)#/img/djlogo.gif",
+	"telephone": "+1-305-932-6166",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "20633 Biscayne Blvd Suite C2",
+		"addressLocality": "Aventura",
+		"addressRegion": "FL",
+		"postalCode": "33180",
+		"addressCountry": "US"
+	},
 	"contactPoint": [{
 		"@type": "ContactPoint",
 		"telephone": "+1-305-932-6166",
