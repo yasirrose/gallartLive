@@ -3,7 +3,7 @@
 <cfset pageTitle = "Buy and Sell Fine Art | Gallart">
 <cfset pageDescription = "Gallart offers curated fine art for buying and selling, featuring works by leading modern and contemporary artists.">
 <cfset pageCanonicalPath = "/">
-<html>
+<html lang="en">
 <head>
 <cfoutput>
 <title>#companyname# - #titletext#</title>
@@ -22,7 +22,7 @@
 	<script language="JavaScript" src="/js/utils.js"></script>
 	<script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.bgpos.js"></script>
-	<script type="text/javascript" src="/js/jquery.cross-slide.js"></script>
+	<script type="text/javascript" src="/js/jquery.cross-slide.min.js"></script>
     <script language="JavaScript" src="/js/slimbox2.js"></script>
 	<link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
 </cfoutput>

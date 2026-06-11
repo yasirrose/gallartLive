@@ -1,5 +1,5 @@
 <script type="text/javascript" src="../js/thickbox-compressed.js"></script>
-<link rel="stylesheet" href="../css/thickbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../css/thickbox.min.css" type="text/css" media="screen" />
 <style>
 	#TB_ajaxContent.TB_modal {
 	height: 600px !important;

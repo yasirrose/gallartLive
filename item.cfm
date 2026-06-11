@@ -826,7 +826,7 @@
 																	  <div class="row">
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.facebook.com/" target="_blank">
+																			<a href="https://www.facebook.com/" rel="nofollow noopener" target="_blank">
 																			<i class='fab fa-facebook-messenger'></i>
 																			<span>Messenger</span>
 																			</a>
@@ -835,7 +835,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.pinterest.com/" target="_blank">
+																			<a href="https://www.pinterest.com/" rel="nofollow noopener" target="_blank">
 																			<i class="fab fa-pinterest"></i>
 																			<span>Pinterest</span>
 																			</a>
@@ -844,7 +844,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.facebook.com/" target="_blank">
+																			<a href="https://www.facebook.com/" rel="nofollow noopener" target="_blank">
 																			<i class="fab fa-facebook-square"></i>
 																			<span>Facebook</span>
 																			</a>
@@ -853,7 +853,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.reddit.com/" target="_blank">
+																			<a href="https://www.reddit.com/" rel="nofollow noopener" target="_blank">
 																			<i class="fab fa-reddit"></i>
 																			<span>Reddit</span>
 																			</a>
@@ -862,7 +862,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn" >
-																			<a href="https://twitter.com/" target="_blank">
+																			<a href="https://twitter.com/" rel="nofollow noopener" target="_blank">
 																			<i class="fab fa-twitter"></i>
 																			<span>Twitter</span>
 																			</a>
@@ -871,7 +871,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="#whatsappURL#" target="_blank">
+																			<a href="#whatsappURL#" rel="nofollow noopener" target="_blank">
 																			<i class="fab fa-whatsapp"></i>
 																			<span>WhatsApp</span>
 																			</a>
@@ -879,7 +879,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://pk.linkedin.com/" target="_blank">
+																			<a href="https://pk.linkedin.com/" rel="nofollow noopener" target="_blank">
 																			<i class="fab fa-linkedin"></i>
 																			<span>LinkdeIn</span>
 																			</a>
