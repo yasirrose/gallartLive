@@ -33,7 +33,7 @@
 <script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 
-<link rel="stylesheet" href="/stylesheet_.css" type="text/css">
+<link rel="stylesheet" href="/stylesheet_.min.css" type="text/css">
 
 <script type="text/javascript">
 

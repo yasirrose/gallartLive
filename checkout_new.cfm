@@ -225,16 +225,39 @@
 			}
 
 			// Function to remove item from cart
+			// function removeItem(itemId) {
+			// 	if(confirm('Are you sure you want to remove this item from your cart?')) {
+			// 		// Create a hidden form for removal
+			// 		var form = document.createElement('form');
+			// 		form.method = 'POST';
+			// 		form.action = 'checkout_new';
+
+			// 		var input = document.createElement('input');
+			// 		input.type = 'hidden';
+			// 		input.name = 'updateQty';
+			// 		input.value = '1';
+
+			// 		var pidInput = document.createElement('input');
+			// 		pidInput.type = 'hidden';
+			// 		pidInput.name = 'selected_pid';
+			// 		pidInput.value = itemId;
+
+			// 		form.appendChild(input);
+			// 		form.appendChild(pidInput);
+
+			// 		document.body.appendChild(form);
+			// 		form.submit();
+			// 	}
+			// }
 			function removeItem(itemId) {
 				if(confirm('Are you sure you want to remove this item from your cart?')) {
-					// Create a hidden form for removal
 					var form = document.createElement('form');
 					form.method = 'POST';
 					form.action = 'checkout_new';
 
 					var input = document.createElement('input');
 					input.type = 'hidden';
-					input.name = 'updateQty';
+					input.name = 'removeItem'; 
 					input.value = '1';
 
 					var pidInput = document.createElement('input');
@@ -244,7 +267,6 @@
 
 					form.appendChild(input);
 					form.appendChild(pidInput);
-
 					document.body.appendChild(form);
 					form.submit();
 				}
@@ -313,7 +335,7 @@
 			}
 		</style>
 
-		<link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
 
 			var _gaq = _gaq || [];

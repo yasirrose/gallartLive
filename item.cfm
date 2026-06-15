@@ -105,7 +105,7 @@
 		  <!--- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Ensure jQuery is loaded first --> --->
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		  <script language="JavaScript" src="/js/slimbox2.js"></script>
-		  <link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
+		  <link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">
 		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 		  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 		  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -175,7 +175,7 @@
 				});
 			</script>
 	   </cfoutput>
-	   <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+	   <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 	   <script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-34565365-1']);
@@ -826,7 +826,7 @@
 																	  <div class="row">
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.facebook.com/" target="_blank">
+																			<a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
 																			<i class='fab fa-facebook-messenger'></i>
 																			<span>Messenger</span>
 																			</a>
@@ -835,7 +835,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.pinterest.com/" target="_blank">
+																			<a href="https://www.pinterest.com/" rel="noopener noreferrer" target="_blank">
 																			<i class="fab fa-pinterest"></i>
 																			<span>Pinterest</span>
 																			</a>
@@ -844,7 +844,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.facebook.com/" target="_blank">
+																			<a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
 																			<i class="fab fa-facebook-square"></i>
 																			<span>Facebook</span>
 																			</a>
@@ -853,7 +853,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://www.reddit.com/" target="_blank">
+																			<a href="https://www.reddit.com/" rel="noopener noreferrer" target="_blank">
 																			<i class="fab fa-reddit"></i>
 																			<span>Reddit</span>
 																			</a>
@@ -862,7 +862,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn" >
-																			<a href="https://twitter.com/" target="_blank">
+																			<a href="https://twitter.com/" rel="noopener noreferrer" target="_blank">
 																			<i class="fab fa-twitter"></i>
 																			<span>Twitter</span>
 																			</a>
@@ -871,7 +871,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="#whatsappURL#" target="_blank">
+																			<a href="#whatsappURL#" rel="noopener noreferrer" target="_blank">
 																			<i class="fab fa-whatsapp"></i>
 																			<span>WhatsApp</span>
 																			</a>
@@ -879,7 +879,7 @@
 																		 </div>
 																		 <div class="col-md-6 col-sm-6">
 																			<button type="button" class="flex-btn">
-																			<a href="https://pk.linkedin.com/" target="_blank">
+																			<a href="https://pk.linkedin.com/" rel="noopener noreferrer" target="_blank">
 																			<i class="fab fa-linkedin"></i>
 																			<span>LinkdeIn</span>
 																			</a>

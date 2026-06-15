@@ -101,7 +101,7 @@
 				<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </cfoutput>
 
-<link href="stylesheet_.css" rel="stylesheet" type="text/css">
+<link href="stylesheet_.min.css" rel="stylesheet" type="text/css">
 
 <!-- BEGIN ROBLY WIDGET CODE -->
 <script type='text/javascript'>
