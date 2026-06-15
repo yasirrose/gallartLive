@@ -1727,6 +1727,13 @@ footer .footer-container .footer-wrapper .footer__newsletter .footer__newsletter
 	margin-top: 0;
     padding: 0;
 }
+.new-item-page .right-section .item-text-content .top-heading h1.meta {
+	font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+	margin-top: 0;
+    padding: 0;
+}
 .new-item-page .right-section .item-text-content .top-heading h2.title {
 	font-size: 30px;
     font-weight: 600;
@@ -2590,6 +2597,91 @@ a, button, input {
 	left: 50% !important;
 	transform: translate(-50%, -50%);
 }
+.featuredevents-page {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 16px 60px;
+    box-sizing: border-box;
+}
+
+.featuredevents-page table {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.featuredevents-page td {
+    display: block;
+    width: 100% !important;
+    padding: 0 !important;
+    vertical-align: top;
+}
+
+.featuredevents-page img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    margin: 0 auto 16px;
+    border-radius: 4px;
+}
+
+.featuredevents-page p {
+    margin: 0;
+    padding: 0;
+}
+
+.featuredevents-page img[src*="spacer.gif"] {
+    display: none !important;
+}
+
+.featuredevents-page td:has(> a[href*="gallart.com"]:only-child),
+.featuredevents-page tr:last-child td {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    padding: 4px 0 !important;
+}
+
+.featuredevents-page > table {
+    margin-bottom: 32px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 24px;
+}
+
+.featuredevents-page > table:last-of-type {
+    border-bottom: none;
+}
+
+.featuredevents-page table table table td {
+    display: inline-block;
+    width: auto !important;
+    padding: 1px 12px 1px 0 !important;
+    font-size: 14px;
+    color: #333;
+}
+
+.featuredevents-page a img {
+    transition: opacity 0.2s ease;
+}
+.featuredevents-page a:hover img {
+    opacity: 0.85;
+}
+
+.art-work-content .breadcrumb {
+    margin-top: 32px !important;
+    margin-left: 0 !important;
+    padding-left: 0;
+    background: none;
+}
+
+@media (max-width: 768px) {
+    .featuredevents-page {
+        padding: 0 12px 40px;
+    }
+}
 
 @media (max-width: 1600px) {
 	.main-content .content-section {
@@ -3105,6 +3197,9 @@ footer .footer-container .footer-wrapper .top-footer .footer-menu h3 {
 	.new-item-page .right-section .item-text-content .top-heading h3.meta {
 		font-size: 20px;
 	}
+	.new-item-page .right-section .item-text-content .top-heading h1.meta {
+		font-size: 20px;
+	}
 	.bottom-row .multi-slick-carousel .slick-prev, .bottom-row .multi-slick-carousel .slick-next {
 		width: 35px;
 		height: 35px;
@@ -3359,6 +3454,9 @@ footer .footer-container .footer-wrapper .top-footer .footer-menu h3 {
 	.user-registrations form .submit-form-btn {
 		font-size: 18px !important;
 	}
+	.featuredevents-page {
+        padding: 0 8px 32px;
+    }
 }
 @media (max-width: 400px) {
 	.main-content .web-sidebar-modal.show-sidebar-modal #left {
