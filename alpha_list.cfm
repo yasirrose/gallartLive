@@ -18,7 +18,7 @@
 <script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 
-<link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+<link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -85,7 +85,7 @@
 													<!--- <cfinclude template="search.cfm"> --->
 													<div class="search-form-group">
 														<div class="top-content new-top-content testing">
-															<h4><b>Browse <i>Artists</i> by Name</b></h4>
+															<h1 style="font-size: 34px; font-weight: 300; font-family: 'Font Awesome 5 Brands'; margin-bottom: 0;"><b>Browse <i>Artists</i> by Name</b></h1>
 														</div>
 														<form name="dropdown">
 															

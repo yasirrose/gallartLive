@@ -18,7 +18,7 @@
 			<script language="JavaScript" src="/js/utils.js"></script>
 		</cfoutput>
 
-		<link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 
 	</head>
 	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">

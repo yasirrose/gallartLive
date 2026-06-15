@@ -69,7 +69,7 @@
 		  <!--- <script language="JavaScript" src="http://#server_name#/js/utils.js"></script> --->
 		  <script language="JavaScript" src="/js/jquery-1.2.6.min.js"></script>
 		  <script language="JavaScript" src="/js/slimbox2.js"></script>
-		  <link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
+		  <link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">
 		  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 		  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
 		  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -89,7 +89,7 @@
 		  }
 			  
 	   </SCRIPT>
-	   <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+	   <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 	   <script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-34565365-1']);

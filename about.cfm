@@ -11,7 +11,7 @@
 		<cfoutput>
 			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 			<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-			<link rel="stylesheet" type="text/css" href="/stylesheet_.css">
+			<link rel="stylesheet" type="text/css" href="/stylesheet_.min.css">
 			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 			<!--- <script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script> --->
@@ -61,7 +61,7 @@
 															<div class="policy-content">
 																<div class="top-heading text-left">
 																	<cfoutput>
-																		<h3>About Us</h3>
+																		<h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">About Us</h1>
 																		<p>Gallery Art is an 8,000 Sq. Ft. internationally recognized go-to gallery, conveniently located in Aventura, halfway between the Miami and Fort Lauderdale airports. Whether you are buying or selling fine art, Gallery Art’s professional art consultants offer specialized and personal one-on-one attention to everyone who visits the gallery, connects through GallArt.com, social media or by telephone. Currently, Gallery Art is showcasing works by Andy Warhol, Banksy, Pablo Picasso, Robert Indiana, Peter Max, Keith Haring, Roy Lichtenstein, Tom Wesselmann, Salvador Dali and other world renowned artists. Gallery Art services include private collection purchases, art sales, custom framing, installations, in-home art showings, worldwide shipping, art certifications and appraisals.<br><br>
 																			
 																		Along with his staff, Ken Hendel, owner and curator of Gallery Art, prides himself on his commitment to helping first time art enthusiasts as well as seasoned collectors understand current art market trends and market values. Gallery Art has been servicing the community and art world for over 30 years and a visit promises to be more than any art collector could ever expect. </p>

@@ -21,10 +21,10 @@
 	<link href="/css/photogallery.css" rel="stylesheet" type="text/css">
 	<script language="JavaScript" src="/js/utils.js"></script>
 	<script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.bgpos.js"></script>
+	<script type="text/javascript" src="/js/jquery.bgpos.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.cross-slide.min.js"></script>
     <script language="JavaScript" src="/js/slimbox2.js"></script>
-	<link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
+	<link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">
 </cfoutput>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <cfquery name="qSlideshow" datasource="#application.dsource#">
@@ -104,7 +104,7 @@ a.SeeMore:hover {
 </script>
 
 
-<link href="/stylesheet_.css?x=<cfoutput>#RandRange(0,100)#</cfoutput>" rel="stylesheet" type="text/css">
+<link href="/stylesheet_.min.css?x=<cfoutput>#RandRange(0,100)#</cfoutput>" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -177,7 +177,7 @@ a.SeeMore:hover {
 										</div>
 										<div class="featured-work-content" style="background-color:#F2F2F2; border-radius:10px;">
 											<div class="top-heading home-page-heading">
-												<h3>FEATURED ARTISTS</h3>
+												<h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">FEATURED ARTISTS</h1>
 											</div>
 											<div class="bottom-content">
 												<div class="product-items">

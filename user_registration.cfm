@@ -176,7 +176,7 @@
 		  <!--- <script language="JavaScript" src="http://#server_name#/js/utils.js"></script> --->
 	   </cfoutput>
 	   <meta name='viewport' content='width=device-width, initial-scale=1'>
-	   <link href="stylesheet_.css" rel="stylesheet" type="text/css">
+	   <link href="stylesheet_.min.css" rel="stylesheet" type="text/css">
 	   <style>
 		  .custom-radio .form-check-input:checked {
 		  background-color: #0d6efd;

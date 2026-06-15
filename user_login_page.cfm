@@ -27,7 +27,7 @@
          <!--- <script language="JavaScript" src="http://#server_name#/js/utils.js"></script> --->
       </cfoutput>
 
-      <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
       <script type="text/javascript">
 
          var _gaq = _gaq || [];
@@ -83,7 +83,7 @@
                               <div class="art-work-content">
                                  <div class="bottom-content">
                                     <div class="top-heading">
-                                       <h3> Login </h3>
+                                       <h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: #000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;"> Login </h1>
                                     </div>
                                     <div class="user-registrations">
                                        <cfinclude template="userlogin_form.cfm">
