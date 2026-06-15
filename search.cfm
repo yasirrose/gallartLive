@@ -23,7 +23,7 @@
 			</div> --->
 			<div class="col-md-12">
 				<div class="top-heading">
-					<h3>Browse Our Inventory</h3>
+					<h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">Browse Our Inventory</h1>
 				</div>
 			</div>
 			<div class="col-md-12">

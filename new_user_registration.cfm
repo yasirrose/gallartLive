@@ -182,7 +182,7 @@
 <script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+<link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 <style>
     .custom-radio .form-check-input:checked {
         background-color: #0d6efd;
@@ -1066,7 +1066,7 @@
 																					<br /><br />
 																				</cfif>
 																				<cfoutput>
-																				<cfform name="frm1" action="/sell-your-art" method="post" enctype="multipart/form-data" id="generalForm" onsubmit="return validateGeneralForm(event)">
+																				<form name="frm1" action="/sell-your-art" method="post" enctype="multipart/form-data" id="generalForm" onsubmit="return validateGeneralForm(event)">
 																				<input	type="hidden" name="captcha_check2"	value="#FORM.captcha_check2#" />
 																				<div class="input-form">
 																					<div class="row">
@@ -1078,21 +1078,21 @@
 																						<div class="col-md-4">
 																							<div class="input-field">
 																								<label><b> First Name<span style="color: ##ff0000;">*</span></b></label> 
-																								<cfinput type="text" name="fname" id="fname" value="#form.fname#" size="30" maxlength="30" >
+																								<input type="text" name="fname" id="fname" value="#form.fname#" size="30" maxlength="30" >
 																								<span class="error-message" id="G_fnameError"></span>
 																							</div>
 																						</div>
 																						<div class="col-md-4">
 																							<div class="input-field"> 
 																								<label><b>Last Name<span style="color: ##ff0000;">*</span></b></label>
-																								<cfinput type="text" name="lname" id="lname" value="#form.lname#" size="30" maxlength="30" >
+																								<input type="text" name="lname" id="lname" value="#form.lname#" size="30" maxlength="30" >
 																								<span class="error-message" id="G_lnameError"></span>
 																							</div>
 																						</div>
 																						<div class="col-md-4">
 																							<div class="input-field">
 																								<label><b>Email<span style="color: ##ff0000;">*</span></b></label>
-																								<cfinput type="text" name="email_purchase" id="email_purchase" value="#form.email_purchase#" size="30" maxlength="20"  validate="regular_expression" pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-|\_)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$"  >
+																								<input type="text" name="email_purchase" id="email_purchase" value="#form.email_purchase#" size="30" maxlength="20"  validate="regular_expression" pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-|\_)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$"  >
 																								<span class="error-message" id="G_email_purchaseError"></span>
 																							</div>
 																						</div>
@@ -1113,7 +1113,7 @@
 																						<div class="col-md-4 pt-4">
 																							<div class="input-field">
 																								<label><b>Phone Number <span style="color: ##ff0000;">*</span></b></label>
-																								<cfinput type="text" name="phone" id="phone" value="#form.phone#" size="30" maxlength="20" >
+																								<input type="text" name="phone" id="phone" value="#form.phone#" size="30" maxlength="20" >
 																								<!--- <span id="formatSign">(xxx) xxx-xxxx</span> --->
 																								<span class="error-message" id="G_phoneError"></span>
 																							</div>
@@ -1121,7 +1121,7 @@
 																						<div class="col-md-4 pt-4">
 																							<div class="input-field pb-3">
 																								<label><b>Price Desired<span style="color: ##ff0000;">*</span></b></label>
-																								<cfinput type="text" name="size" value="#form.size#" maxlength="6" size="30" id="size" placeholder="e.g $2000">
+																								<input type="text" name="size" value="#form.size#" maxlength="6" size="30" id="size" placeholder="e.g $2000">
 																								<span class="error-message" id="G_sizeError"></span>
 																							</div>
 																						</div>
@@ -1177,7 +1177,7 @@
 																								<cfimage action="captcha" height="75" width="363" text="#strCaptcha2#" difficulty="low" fonts="verdana,arial,times new roman,courier" fontsize="28"	/>
 																								<br><br>
 																								<FONT face="verdana,arial,helvetica" color="000000" size="-2"><b>Please enter the characters in the image above:</b></FONT><br><br>
-																								<cfinput type="text" name="captcha2" id="captcha2">
+																								<input type="text" name="captcha2" id="captcha2">
 																								<span class="error-message" id="G_captcha2Error"></span>
 																							</div> --->
 
@@ -1196,7 +1196,7 @@
 																						<p><b>*If you any questions please email <a href="mailto: sales@gallart.com">sales@gallart.com</a> or call 305-932-6166 for further assistance. </b></p>
 																					</div> -->
 																				</div>
-																				</cfform>						
+																				</form>						
 																				</cfoutput>
 																				</cfif>
 
@@ -1221,7 +1221,7 @@
 																						</span><br><br>
 																					</cfif>
 																					<!--- onsubmit="return validateSellerForm()" --->
-																					<CFFORM ACTION="#script_name#" METHOD="POST"  id="submitSellerForm">
+																					<form ACTION="#script_name#" METHOD="POST"  id="submitSellerForm">
 																						<input type="hidden" name="submitted" value="1" />
 																						<input	type="hidden" name="captcha_check"	value="#FORM.captcha_check#" />
 																						<div class="input-form">
@@ -1229,21 +1229,21 @@
 																								<div class="col-md-6">
 																									<div class="input-field">
 																										<label><b>First Name:<span style="color: ##ff0000;">*</span></b></label>
-																										<cfinput type="text" name="fname" id="S_fname" value="#form.fname#" size="30" maxlength="30" >
+																										<input type="text" name="fname" id="S_fname" value="#form.fname#" size="30" maxlength="30" >
 																										<span class="error-message" id="S_fnameError"></span>
 																									</div>
 																								</div>
 																								<div class="col-md-6">
 																									<div class="input-field">
 																										<label><b>Last Name:<span style="color: ##ff0000;">*</span></b></label>
-																										<cfinput type="text" name="lname" id="S_lname" value="#form.lname#" size="30" maxlength="30">
+																										<input type="text" name="lname" id="S_lname" value="#form.lname#" size="30" maxlength="30">
 																										<span class="error-message" id="S_lnameError"></span>
 																									</div>
 																								</div>
 																								<div class="col-md-4">
 																									<div class="input-field">
 																										<label><b>Email:<span style="color: ##ff0000;">*</span></b></label>
-																										<cfinput type="text" name="Email" id="S_Email" value="#form.Email#" size="30" maxlength="30" validate="regular_expression" pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-|\_)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$">
+																										<input type="text" name="Email" id="S_Email" value="#form.Email#" size="30" maxlength="30" validate="regular_expression" pattern="^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-|\_)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$">
 																										<span class="error-message" id="S_EmailError"></span>
 																									</div>
 																								</div>
@@ -1264,7 +1264,7 @@
 																								<div class="col-md-4">
 																									<div class="input-field">
 																										<label><b>Phone Number:<span style="color: ##ff0000;">*</span></b></label>
-																										<cfinput type="text" name="cellphone" id="S_cellphone" value="#form.cellphone#" maxlength="20"  size="30">
+																										<input type="text" name="cellphone" id="S_cellphone" value="#form.cellphone#" maxlength="20"  size="30">
 																										<!--- <span id="S_formatSign">(xxx) xxx-xxxx</span> --->
 																										<span class="error-message" id="S_cellphoneError"></span>
 																									</div>
@@ -1273,14 +1273,14 @@
 																								<div class="col-md-6">
 																									<div class="input-field">
 																										<label><b>Create a Password:<span style="color: ##ff0000;">*</span></b></label>
-																										<cfinput type="password" name="password" id="S_password" size="30" maxlength="15" >
+																										<input type="password" name="password" id="S_password" size="30" maxlength="15" >
 																										<span class="error-message" id="S_passwordError"></span>
 																									</div>
 																								</div>
 																								<div class="col-md-6">
 																									<div class="input-field">
 																										<label><b>Re-enter Password:<span style="color: ##ff0000;">*</span></b></label>
-																										<cfinput type="password" name="password2" id="S_password2" size="30" maxlength="15" >
+																										<input type="password" name="password2" id="S_password2" size="30" maxlength="15" >
 																										<span class="error-message" id="S_password2Error"></span>
 																									</div>
 																								</div>
@@ -1290,7 +1290,7 @@
 																								<cfimage action="captcha" height="75" width="363" text="#strCaptcha#" difficulty="low" fonts="verdana,arial,times new roman,courier" fontsize="28"	/>
 																								<br><br>
 																								<FONT face="verdana,arial,helvetica" color="000000"><b>Please enter the characters in the image above:</b></FONT><br><br>
-																								<cfinput type="text" name="captcha" id="S_captcha">
+																								<input type="text" name="captcha" id="S_captcha">
 																								<span class="error-message" id="S_captchaError"></span>
 																							</div> --->
 
@@ -1317,7 +1317,7 @@
 																								If you have already signed up as a seller, please <a href="user_login_page.cfm?xss=#xss#"> <b>Sign In </b></a>
 																							</p> --->
 																						</div>
-																					</cfform>
+																					</form>
 																				</div>
 																			</cfoutput>
 																		</div>

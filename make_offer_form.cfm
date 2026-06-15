@@ -12,7 +12,7 @@
 <script language="JavaScript" src="/js/utils.js"></script>
 <script language="JavaScript" src="/js/jquery-1.2.6.min.js"></script>
 <script language="JavaScript" src="/js/slimbox2.js"></script>
-<link href="/css/slimbox2.css" rel="stylesheet" type="text/css">
+<link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">
 </cfoutput>
 
 <SCRIPT LANGUAGE="JavaScript">

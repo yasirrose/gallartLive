@@ -472,7 +472,7 @@
          <script language="JavaScript" src="/js/utils.js"></script>
       </cfoutput>
 
-      <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

@@ -22,7 +22,7 @@
          WHERE pk_pages = 7
       </cfquery>
 
-      <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
       <script type="text/javascript">
 
          var _gaq = _gaq || [];
