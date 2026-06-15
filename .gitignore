@@ -1,0 +1,59 @@
+# -----------------------------------------------
+# Gallart.com – Git Ignore Rules
+# -----------------------------------------------
+
+# Images
+img/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.webp
+*.svg
+*.ico
+*.heic
+*.heif
+*.avif
+*.psd
+*.ai
+*.eps
+
+# Archives & zips
+*.zip
+
+# Documents
+*.pdf
+
+# Backup files
+*.bak
+*_bk.*
+*-bk.*
+*_bk-*
+*-bk-*
+*bkp*
+
+# Backup CFM naming patterns (e.g. 06-09-2026-bk-center_featured.cfm)
+[0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]-bk-*.cfm
+
+# Test files
+*_test.cfm
+*-test.cfm
+*test*.cfm
+test.cfm
+test.html
+
+# Legacy / misc
+*.php5
+~
+~*
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+*.sql
