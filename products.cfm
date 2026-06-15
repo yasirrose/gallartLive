@@ -23,7 +23,7 @@
 <script language="JavaScript" src="/js/utils.js"></script>
 </cfoutput>
 
-<link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+<link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -196,7 +196,7 @@
 
 
                                                 <div class="top-heading m-0">
-                                                    <h3>
+                                                    <h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">
                                                         <cfparam name="artistName" default="#getBio.artist#">
                                                         <cfif find(',',getBio.artist)>
                                                             <cfset artistName = "#listlast(getBio.artist,',')# #listfirst(getBio.artist,',')#" />
@@ -208,7 +208,7 @@
 
 
                                                         
-                                                    </h3>
+                                                    </h1>
                                                     <cfset bioImage = reReplace(getBio.bio, ".*?(<img[^>]+>).*", "\1", "ALL")>
                                                     <cfset bioText = reReplaceNoCase(getBio.bio, "<img[^>]+>", "", "ALL")>
 

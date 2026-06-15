@@ -27,6 +27,7 @@ img/
 # Documents
 *.pdf
 
+temp_auto_push.bat
 # Backup files
 *.bak
 *_bk.*
@@ -56,4 +57,5 @@ Thumbs.db
 
 # Logs
 *.log
-*.sql
+*.sql.gitignore
+branch_structure.json
