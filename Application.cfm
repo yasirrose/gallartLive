@@ -472,6 +472,17 @@
 			<cfset titletext = "Guest Book">
 			<cfset pageDescription = "Read comments and feedback from Gallart guests and customers.">
 		</cfcase>
+		<cfcase value="sitemap.xml">
+			<cfcontent type="application/xml; charset=UTF-8" reset="true">
+			<cfinclude template="sitemap.xml">
+			<cfabort>
+		</cfcase>
+
+		<cfcase value="llms.txt">
+			<cfcontent type="text/plain; charset=UTF-8" reset="true">
+			<cfinclude template="llms.txt">
+			<cfabort>
+		</cfcase>
 	</cfswitch>
 </cfif>
 

@@ -30,7 +30,7 @@
 
  <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
  <cfparam name="xss" default="">
- <html>
+ <html lang="en">
 	<head>
 	   <cfoutput>
 		  <title>#companyname# - #titletext#</title>
@@ -42,7 +42,7 @@
 
 	   <cfinclude template="meta.cfm">
 
-	   <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+	   <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 	   <script type="text/javascript">
 
 		  var _gaq = _gaq || [];
@@ -294,7 +294,7 @@
 										</cfif>
 										<cfif not success>
 										   <cfoutput>
-											  <CFFORM ACTION="/contact-us" METHOD="POST" name="guestFrm" onsubmit="return validateForm(event)">
+											  <form ACTION="/contact-us" METHOD="POST" name="guestFrm" onsubmit="return validateForm(event)">
 												 <input type="hidden" name="submitted" value="1" />
 												 <!--- <input	type="hidden" name="captcha_check"	value="#FORM.captcha_check#" /> --->
 												 <div class="top-heading">
@@ -322,14 +322,14 @@
 
 														<div class="col-md-6">
 															<div class="input-field">														
-															<cfinput type="text" size=40 maxsize=50 maxLength="30" name="name" id="name" placeholder="Enter your Name*" value="#form.name#" >															
+															<input type="text" size=40 maxsize=50 maxLength="30" name="name" id="name" placeholder="Enter your Name*" value="#form.name#" >															
 															<span class="error-message" id="nameError"></span>
 															</div>
 														</div>
 
 														<div class="col-md-6">
 															<div class="input-field">															
-															<cfinput type="text" size=40 maxsize=50 maxlength="30" name="email" placeholder="Enter your Email Address*" value="#form.email#" >													
+															<input type="text" size=40 maxsize=50 maxlength="30" name="email" id="email" placeholder="Enter your Email Address*" value="#form.email#" >													
 															<span class="error-message" id="emailError"></span>
 															</div>
 														</div>
@@ -347,7 +347,7 @@
 
 														<div class="col-md-6">
 															<div class="input-field">													   
-															<cfinput type="text" size=40 maxsize=50 maxLength="20" name="phone" id="phone" placeholder="Enter your Phone Number*" value="#form.phone#" >
+															<input type="text" size=40 maxsize=50 maxLength="20" name="phone" id="phone" placeholder="Enter your Phone Number*" value="#form.phone#" >
 															<!--- <span id="formatSign">(xxx) xxx-xxxx</span> --->
 															<span class="error-message" id="phoneNumerError"></span>
 															</div>
@@ -370,7 +370,7 @@
 													   <button type="reset" class="SeeMore">Reset</button>
 													</div>
 												 </div>
-											  </CFFORM>
+											  </form>
 										   </cfoutput>										
 									 	</cfif>
 									 </div>	

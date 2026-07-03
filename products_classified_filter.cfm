@@ -277,12 +277,12 @@
 								<cfset artist_name_url = manufacturer />
 							</cfif>
 					<Cfset pc = pc + 1>
-								<Td valign="top" align="Center">
-								
-								<A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(manufacturer)#&artistname=#urlencodedformat(trim(artist_name_url))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">
+							<Td valign="top" align="Center">
+							
+							<A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(manufacturer)#&artistname=#urlencodedformat(trim(artist_name_url))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">
 
-<img src="/img/thumbnails/#uid#.jpg" alt="#ucase(manufacturer)# - #name#" border="0" align="center"></A><br>
-								<font face="verdana,arial, helvetica" size="1" color="black"><A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(manufacturer)#&artistname=#urlencodedformat(trim(artist_name_url))#')"><font face="verdana,arial, helvetica" size="1" color="black">#name#</a><h1>BY: #ucase(artist_name)#</h1><font color="660066" size="1">
+							<img src="/img/thumbnails/#uid#.jpg" alt="#ucase(manufacturer)# - #name#" border="0" align="center"></A><br>
+							<font face="verdana,arial, helvetica" size="1" color="black"><A HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(manufacturer)#&artistname=#urlencodedformat(trim(artist_name_url))#')"><font face="verdana,arial, helvetica" size="1" color="black">#name#</a><h1>BY: #ucase(artist_name)#</h1><font color="660066" size="1">
 					<cfif retail_price gt 0 and retail_price gt gallery_price>
 					Retail Price: #dollarformat(retail_price)#</cfif></font><Br>
 					<font face="verdana,arial, helvetica" size="1" color="ff6600">

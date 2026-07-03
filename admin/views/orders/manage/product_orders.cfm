@@ -520,7 +520,7 @@
 									Email:
 								</td>
 								<td>
-									<cfinput type="text" name="customer_email" id="customer_email"  bind="{data.customer_email}" size="35" class="displayInput">&nbsp;
+									<cfinput type="text" name="customer_email" id="customer_email"  bind="{data.customer_email}" size="35" class="displayInput" validate="email" message="Please enter a valid email address.">&nbsp;
                                     <input type="Button" id="emailButton" value="Send Email To Customer" onclick="openCustomerEmailWindow();" />
 									<!--<span  id="emailLink"></span>-->
 								</td>
@@ -548,7 +548,7 @@
 								</td>
 								<td>
 									<cfinput type="text" name="phoneNumber" id="phoneNumber" maxlength="20" >
-									<span id="formatSign">(xxx) xxx-xxxx</span>
+									<!--- <span id="formatSign">(xxx) xxx-xxxx</span> --->
 								</td>
 							</tr>
 
@@ -557,22 +557,28 @@
 									document.addEventListener("DOMContentLoaded", function() {
 										const phoneInput = document.getElementById("phoneNumber");
 										const phoneType = document.getElementById("PhoneType");
-										const formatSign = document.getElementById("formatSign");
+										// const formatSign = document.getElementById("formatSign");
 
-										function toggleFormatSign() {
-											if (phoneType.value === "OutsideUS") {
-												formatSign.style.display = "none";
-											} else {
-												formatSign.style.display = "inline";
-											}
-										}
+										// function toggleFormatSign() {
+										// 	if (phoneType.value === "OutsideUS") {
+										// 		formatSign.style.display = "none";
+										// 	} else {
+										// 		formatSign.style.display = "inline";
+										// 	}
+										// }
 
-										// run on load (in case form already has value)
-										toggleFormatSign();
+										// // run on load (in case form already has value)
+										// toggleFormatSign();
 
-										// run on change
-										phoneType.addEventListener("change", toggleFormatSign);
+										// // run on change
+										// phoneType.addEventListener("change", toggleFormatSign);
 
+										phoneType.addEventListener("change", function() {
+											if (this.value === "OutsideUS" && phoneInput.value === '') {
+												phoneInput.value = "+1"; 
+											} 
+										});
+										
 										phoneInput.addEventListener("input", function(e) {
 											// If type is OutsideUS → skip formatting
 											if (phoneType.value === "OutsideUS") {
@@ -949,6 +955,16 @@
 	function validateOrderForm() {
 		let phoneType = document.getElementById("PhoneType").value;
 		let phone = document.getElementById("phoneNumber").value.trim();
+				let email = document.getElementById("customer_email").value.trim();
+
+		if (email !== "") {
+			let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailPattern.test(email)) {
+				alert("Please enter a valid email address.");
+				document.getElementById("customer_email").focus();
+				return false;
+			}
+		}
 
 		// Agar phone empty hai aur required nahi, to skip
 		if (phone === "") {

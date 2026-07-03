@@ -12,8 +12,8 @@
 	<link href="http://#server_name#/css/photogallery.css" rel="stylesheet" type="text/css">
 	<script language="JavaScript" src="http://#server_name#/js/utils.js"></script>
 	<script type="text/javascript" src="http://#server_name#/js/jquery-1.2.6.min.js"></script>
-	<script type="text/javascript" src="http://#server_name#/js/jquery.bgpos.js"></script>
-	<script type="text/javascript" src="http://#server_name#/js/jquery.cross-slide.js"></script>
+	<script type="text/javascript" src="http://#server_name#/js/jquery.bgpos.min.js"></script>
+	<script type="text/javascript" src="http://#server_name#/js/jquery.cross-slide.min.js"></script>
 </cfoutput>
 <cfquery name="qSlideshow" datasource="#application.dsource#">
     SELECT UID FROM products P

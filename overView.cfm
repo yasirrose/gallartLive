@@ -19,7 +19,7 @@
 			<script language="JavaScript" src="/js/utils.js"></script>
 		</cfoutput>
 
-		<link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
 
 		var _gaq = _gaq || [];

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <cfparam name="xss" default="">
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
             <script language="JavaScript" src="/js/utils.js"></script>
     </cfoutput>
 
-    <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
 
     var _gaq = _gaq || [];
@@ -79,7 +79,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
 
-    <!---<script id="scripts" type="text/javascript" src="/scripts_887a5339b2625a8970658c4f5f9bd94f1067ab7a.js"></script>--->
+    <script id="scripts" type="text/javascript" src="/scripts_887a5339b2625a8970658c4f5f9bd94f1067ab7a.js"></script>
     <meta name="referrer" content="same-origin" />
 
 	<link rel="icon" sizes="16x16" type="image/png" href=/assets/favicon_16.png />

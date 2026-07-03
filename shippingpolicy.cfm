@@ -19,7 +19,7 @@
          <script language="JavaScript" src="/js/utils.js"></script>
       </cfoutput>
       
-      <link href="/stylesheet_.css" rel="stylesheet" type="text/css">
+      <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
 
    </head>
    <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -60,7 +60,7 @@
                                     <div class="policy-content">
                                        <div class="top-heading text-left">
                                           <cfoutput>
-                                             <h3>SHIPPING POLICY</h3>
+                                             <h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">SHIPPING POLICY</h1>
                                              <p>Once #companyname# receives payment in full, we will take up to 7 working days to ship the artwork. Most orders are delivered within 1 to 10 working days. We do not guarantee any time limit of delivery, in the case a shipment may be delayed due to extraneous circumstances such as flight delays, remote locations, strikes, force majuere and etc.</p>
                                           </cfoutput>
                                        </div>

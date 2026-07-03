@@ -12,10 +12,10 @@
 	<link href="./css/photogallery.css" rel="stylesheet" type="text/css">
 	<script language="JavaScript" src="./js/utils.js"></script>
 	<script type="text/javascript" src="./js/jquery-1.2.6.min.js"></script>
-	<script type="text/javascript" src="./js/jquery.bgpos.js"></script>
-	<script type="text/javascript" src="./js/jquery.cross-slide.js"></script>
+	<script type="text/javascript" src="./js/jquery.bgpos.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.cross-slide.min.js"></script>
     <script language="JavaScript" src="./js/slimbox2.js"></script>
-	<link href="./css/slimbox2.css" rel="stylesheet" type="text/css">
+	<link href="./css/slimbox2.min.css" rel="stylesheet" type="text/css">
 </cfoutput>
 <cfquery name="qSlideshow" datasource="#application.dsource#">
     SELECT UID FROM products P

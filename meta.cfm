@@ -148,7 +148,10 @@
 		</cfif>
 		<cfset canonicalUrl = application.siteCanonicalBaseUrl & canonicalPath>
 </cfif>
-
+<cfif FindNoCase("untitled", canonicalUrl)>
+    <cfset artworkID = reReplace(canonicalUrl, "^.*?(\d+)$", "\1", "one")>
+    <cfset seoDescription = reReplaceNoCase(seoDescription, "untitled", "Artwork ##" & artworkID, "all")>
+</cfif>
 <cfoutput>
 <meta name="description" content="#HTMLEditFormat(seoDescription)#">
 <meta name="keywords" content="#HTMLEditFormat(seoKeywords)#">
