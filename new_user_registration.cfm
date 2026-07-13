@@ -601,7 +601,7 @@
 												<cfmail 
 													server="#servername#" 
 													username="Sales@GallArt.com"
-													password="ylzwtvepstcsammm" 
+													password="nrsnmsnwgdcfiavj" 
 													to="#emailsupport#" cc="#emailsupportcc#" 
 													from="#form.email_purchase#"  
 													port="587"
@@ -903,7 +903,7 @@
 																<cfmail 
 																	server="#servername#" 
 																	username="Sales@GallArt.com"
-																	password="ylzwtvepstcsammm" 
+																	password="nrsnmsnwgdcfiavj" 
 																	to="#emailsupport#" 
 																	cc="#emailsupportcc#" 
 																	from="#form.email#" 
@@ -920,7 +920,7 @@
 																<cfmail 
 																	server="#servername#" 
 																	username="Sales@GallArt.com"
-																	password="ylzwtvepstcsammm" 
+																	password="nrsnmsnwgdcfiavj" 
 																	to="#form.email#" 
 																	from="Sales@GallArt.com"
 																	port="587"

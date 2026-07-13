@@ -627,5 +627,6 @@ WHERE createdon < '#DateFormat(createodbcdate(DateAdd('w',-1,now())))#'
 <cfscript>
 	application.mailserver='smtp.gmail.com';
 	application.mailserver_un='Sales@GallArt.com';
-	application.mailserver_pw='ylzwtvepstcsammm';
+	// application.mailserver_pw='ylzwtvepstcsammm';
+	application.mailserver_pw='nrsnmsnwgdcfiavj';
 </cfscript>

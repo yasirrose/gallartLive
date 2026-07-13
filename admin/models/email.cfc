@@ -187,7 +187,7 @@
 	  <cfpop 
 			server="pop.gmail.com"
 			username="Sales@GallArt.com"
-			password="ylzwtvepstcsammm"
+			password="nrsnmsnwgdcfiavj"
 			action="getHeaderOnly"
 			port="995"
 			secure="yes"

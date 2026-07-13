@@ -49,7 +49,7 @@
 				cc="" 
 				server="smtp.gmail.com" 
 				username="Sales@GallArt.com"
-				password="ylzwtvepstcsammm"
+				password="nrsnmsnwgdcfiavj"
 				port="587"
 				useTLS="true" 
 				type="HTML">

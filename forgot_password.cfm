@@ -45,7 +45,7 @@
 		<cfmail 
 			server="smtp.gmail.com" 
 			username="Sales@GallArt.com"
-			password="ylzwtvepstcsammm" 
+			password="nrsnmsnwgdcfiavj" 
 			to="#findUser.email#" 
 			from="sales@gallart.com" 
 			subject="Gallery Art Password Retrieval" 

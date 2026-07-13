@@ -621,7 +621,7 @@ DELETE FROM cart WHERE trackerid = '#session.xss#'
 <cfmail 
 	server="#servername#" 
 	username="Sales@GallArt.com"
-	password="ylzwtvepstcsammm" 
+	password="nrsnmsnwgdcfiavj" 
 	to="#form.email#" 
 	from="Sales@GallArt.com" 
 	port="587"
@@ -646,7 +646,7 @@ DELETE FROM cart WHERE trackerid = '#session.xss#'
 <cfmail 
 	server="#servername#" 
 	username="Sales@GallArt.com"
-	password="ylzwtvepstcsammm" 
+	password="nrsnmsnwgdcfiavj" 
 	to="#emailsupport#" 
 	cc="#emailsupportcc#" 
 	from="Sales@GallArt" 
