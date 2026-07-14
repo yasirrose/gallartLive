@@ -42,9 +42,9 @@ function helpWin(url) {
 			</cfif>
 
 			<form id="searchForm" method="get">
-			<input type="text" name="keywords"  id="keywords"  value="<cfoutput>#htmlEditFormat(decodedKeyword)#</cfoutput>" placeholder="Search by artist, medium, keywords">                  
-			<button type="submit" class="search-btn" id="searchButton">
-				<i class="fas fa-search"></i>
+			<input type="text" name="keywords"  id="keywords"  value="<cfoutput>#htmlEditFormat(decodedKeyword)#</cfoutput>" placeholder="Search by artist, medium, keywords" aria-label="Search by artist, medium, or keywords">                  
+			<button type="submit" class="search-btn" id="searchButton" aria-label="Search inventory" title="Search inventory">
+				<i class="fas fa-search" aria-hidden="true"></i>
 			</button>
 			</form>
 		</div>
@@ -66,13 +66,13 @@ function helpWin(url) {
 
 						<ul>
 							<li>
-								<a href="/login?redirect=<cfoutput>#urlEncodedFormat(redirectURL)#</cfoutput>">
-									<i class="far fa-user"></i>
+								<a href="/login?redirect=<cfoutput>#urlEncodedFormat(redirectURL)#</cfoutput>" aria-label="Log in" title="Log in">
+									<i class="far fa-user" aria-hidden="true"></i>
 								</a>
 							</li>
 							<li>
-								<a href="/view-cart">
-									<i class="fas fa-shopping-cart"></i>
+								<a href="/view-cart" aria-label="View cart" title="View cart">
+									<i class="fas fa-shopping-cart" aria-hidden="true"></i>
 								</a>
 							</li>
 						</ul>
