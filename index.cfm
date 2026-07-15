@@ -279,7 +279,7 @@ a.SeeMore:hover {
 																			<del>#DollarFormat(gallery_price)#</del>
 																			&nbsp; 
 																			<b>
-																				<span style="color: ##ff0000;">
+																				<span class="sale-price-text">
 																					#DollarFormat(special_price)# 
 																				</span>
 																			</b>
@@ -304,7 +304,7 @@ a.SeeMore:hover {
 																				<del>#DollarFormat(retail_price)# </del>
 																				&nbsp; 
 																					<b>
-																						<span style="color: ##ff0000;">
+																						<span class="sale-price-text">
 																						#DollarFormat(special_price)# 
 																						</span>
 																					</b>
@@ -329,7 +329,7 @@ a.SeeMore:hover {
 																				<del>#DollarFormat(retail_price)# </del>
 																				&nbsp; 
 																					<b>
-																						<span style="color: ##ff0000;">
+																						<span class="sale-price-text">
 																						#DollarFormat(special_price)# 
 																						</span>
 																					</b>
@@ -343,7 +343,7 @@ a.SeeMore:hover {
 																				<del>#DollarFormat(gallery_price)# </del>
 																				&nbsp; 
 																					<b>
-																						<span style="color: ##ff0000;">
+																						<span class="sale-price-text">
 																						#DollarFormat(special_price)# 
 																						</span>
 																					</b>
@@ -382,7 +382,7 @@ a.SeeMore:hover {
 		
 										
 									</div>							
-									<div class="art-work-content" style="background-color:#F2F2F2; border-radius:10px;">
+									<div class="art-work-content sale-artwork-panel">
 										
 										<!--- <cfquery name="initialQuery" datasource="#dsource#" dbtype="ODBC" username="#uname#" password="#pword#">
 											SELECT top 8 *
@@ -493,7 +493,7 @@ a.SeeMore:hover {
 																			<del>#DollarFormat(gallery_price)#</del>
 																			&nbsp; 
 																			<b>
-																				<span style="color: ##ff0000;">
+																				<span class="sale-price-text">
 																					#DollarFormat(special_price)# 
 																				</span>
 																			</b>
@@ -517,7 +517,7 @@ a.SeeMore:hover {
 																				<del>#DollarFormat(retail_price)# </del>
 																				&nbsp; 
 																					<b>
-																						<span style="color: ##ff0000;">
+																						<span class="sale-price-text">
 																						#DollarFormat(special_price)# 
 																						</span>
 																					</b>
@@ -542,7 +542,7 @@ a.SeeMore:hover {
 																				<del>#DollarFormat(retail_price)# </del>
 																				&nbsp; 
 																					<b>
-																						<span style="color: ##ff0000;">
+																						<span class="sale-price-text">
 																						#DollarFormat(special_price)# 
 																						</span>
 																					</b>
@@ -556,7 +556,7 @@ a.SeeMore:hover {
 																				<del>#DollarFormat(gallery_price)# </del>
 																				&nbsp; 
 																					<b>
-																						<span style="color: ##ff0000;">
+																						<span class="sale-price-text">
 																						#DollarFormat(special_price)# 
 																						</span>
 																					</b>
@@ -575,7 +575,7 @@ a.SeeMore:hover {
 															</a>
 															
 															<cfif len(fk_users)>
-																<span style="font-size: 12px; font-weight: bold; color: ##ff0000;">
+																<span class="private-listing-text">
 																	PRIVATE LISTING
 																</span>
 																<br><br>
@@ -638,7 +638,7 @@ a.SeeMore:hover {
 	</div>
 
 	<cfif NOT structKeyExists(session, "email") OR session.email EQ "" >
-		<div class="modal onload-modal fade" id="onload" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal onload-modal fade" id="onload" tabindex="-1" aria-labelledby="onloadModalTitle" aria-describedby="onloadModalDescription" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-head">
@@ -649,14 +649,14 @@ a.SeeMore:hover {
 							<div class="top-image">
 								<img src="/images/G-Logowhite.png" alt="logo" />
 							</div>
-							<h2>Stay in touch</h2>
-							<p>Be the first to know about Gallery Art's upcoming events, recent acquisitions and sales.</p>
+							<h2 id="onloadModalTitle">Stay in touch</h2>
+							<p id="onloadModalDescription">Be the first to know about Gallery Art's upcoming events, recent acquisitions and sales.</p>
 							<div class="email-form">
 								<form id="signupForm" method="POST"  onsubmit="return validateNewsletterForm()">
 									<div class="form-floating">
 										<input type="email" name="email"  class="form-control" maxlength="20" id="email" placeholder="email">
 										<span class="error-message" id="emailError"></span>
-										<label for="floatingInput">Email</label>
+										<label for="email">Email</label>
 									  </div>
 									<div class="privacy-content">
 									  <p>

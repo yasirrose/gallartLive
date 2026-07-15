@@ -31,13 +31,13 @@ order by path
 			<div class="row">
 				<div class="col-md-6">
 					<div class="input-field">
-						<label>Title</label>
+						<label for="adv_title">Title</label>
 						<input type="Text" name="adv_title" id="adv_title">
 					</div>
 				</div>
 		<div class="col-md-6">
 			<div class="input-field ">
-				<label>Artist</label>
+				<label for="adv_artist">Artist</label>
 			<select name="adv_artist" id="adv_artist" class="select2">
 				<option value="" selected>All
 					<cfloop query="artistinfo">
@@ -52,20 +52,20 @@ order by path
 	</div>
 	<div class="col-md-6">
 		<div class="input-field">
-			<label>Keyword in Description</label>
+			<label for="adv_desc_keyword">Keyword in Description</label>
 			<input type="text" name="adv_desc_keyword" id="adv_desc_keyword">
 		</div>
 	</div>
 		<div class="col-md-6">
 			<div class="input-field">
-				<label>Year</label>
+				<label for="adv_year">Year</label>
 				<input type="text" name="adv_year" id="adv_year">
 			</div>
 		</div>
 	<div class="col-md-6">
 		<div class="input-field">
-			<label>Price Range</label>
-			<select name="adv_price_range">
+			<label for="adv_price_range">Price Range</label>
+			<select name="adv_price_range" id="adv_price_range">
 				<option value="">All
 				<option value="1">$0 - $1,000
 				<option value="2">$1,000 - $5,000
@@ -77,7 +77,7 @@ order by path
 	</div>
 	<div class="col-md-6">
 		<div class="input-field ">
-			<label>Medium</label>
+			<label for="adv_medium">Medium</label>
 			<select name="adv_medium" id="adv_medium" class="select2">
 				<option value="">All
 				<cfloop query="cats">

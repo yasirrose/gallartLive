@@ -40,14 +40,14 @@
 	<div id="left">
 		<div class="productSearch-filed web-search">
 			<form action="products.cfm?xss=#xss#" method="post">
-			<input type="text" name="keywords" placeholder="Product Search">                  
-			<button type="button" class="search-btn find" onclick="document.forms[0].submit()"><i class="fas fa-search find"></i></button>
+			<input type="text" name="keywords" placeholder="Product Search" aria-label="Search products">
+			<button type="button" class="search-btn find" onclick="document.forms[0].submit()" aria-label="Search products" title="Search products"><i class="fas fa-search find" aria-hidden="true"></i></button>
 			</form>
 		</div>
 		<div class="advance-search">
 			<a href="searchpage.cfm?xss=#xss#">ADVANCED SEARCH </a>
-			<button class="close-button">
-				<i class='fas fa-times'></i>
+			<button class="close-button" type="button" aria-label="Close sidebar" title="Close sidebar">
+				<i class='fas fa-times' aria-hidden="true"></i>
 			</button>
 		</div>
 		<div class="mobile-overlay">	

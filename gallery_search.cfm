@@ -18,6 +18,18 @@
 		.search-form-group form select {
 			font-weight: 800;
 		}
+
+		.sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border: 0;
+		}
 	</style>
 	<title>Search</title>
 	<script>
@@ -84,7 +96,8 @@
 						<div class="row input-form">
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 									<div class="select-option input-field">
-										<select name="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" onChange="drop('/artists/subject/', 'artSubject')">
+										<label class="sr-only" for="artSubject">Search by subject</label>
+										<select name="artSubject" id="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" aria-label="Search by subject" onChange="drop('/artists/subject/', 'artSubject')">
 											<option value="">Search by Subject</option>
 											<!--- Loop through the query results to create option tags --->
 											<cfoutput query="qEmployees">
@@ -101,7 +114,8 @@
 								</cfquery>
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 									<div class="select-option input-field">
-										<select name="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" onChange="drop('/artists/style/', 'artStyle')">
+										<label class="sr-only" for="artStyle">Search by style</label>
+										<select name="artStyle" id="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" aria-label="Search by style" onChange="drop('/artists/style/', 'artStyle')">
 											<option value="">Search by Style</option>
 											<cfoutput query="qGetStyle">
 												<option value="#filterName#">#filterName#</option>
@@ -131,7 +145,8 @@
 								</cfquery>
 							<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 								<div class="select-option input-field">
-									<select name="artSize" class="chosen-select m-0" data-placeholder="Search by Size" onChange="drop('/artists/size/', 'artSize')">
+									<label class="sr-only" for="artSize">Search by size</label>
+									<select name="artSize" id="artSize" class="chosen-select m-0" data-placeholder="Search by Size" aria-label="Search by size" onChange="drop('/artists/size/', 'artSize')">
 										<option value="">Search by Size</option>
 										<cfoutput query="qGetSize">
 											<option value="#filterName#">#filterName#</option>
@@ -151,7 +166,8 @@
 							</cfquery>
 							<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 								<div class="select-option input-field">
-									<select name="artType" class="chosen-select m-0" data-placeholder="Search by Type" onChange="drop('/artists/type/', 'artType')">
+									<label class="sr-only" for="artType">Search by type</label>
+									<select name="artType" id="artType" class="chosen-select m-0" data-placeholder="Search by Type" aria-label="Search by type" onChange="drop('/artists/type/', 'artType')">
 										<option value="">Search by Type</option>
 										<cfoutput query="qGetType">
 											<option value="#filterName#">#filterName#</option>

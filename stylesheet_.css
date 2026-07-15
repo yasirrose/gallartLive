@@ -608,6 +608,24 @@ a.dbl_arrows {
     flex-direction: column;
     gap: 6px;
 }
+.content-section .banner-section .sale-artwork-panel {
+	background-color: #f2f2f2;
+	border-radius: 10px;
+}
+.content-section .banner-section .sale-artwork-panel .gallery-lists .list-item,
+.content-section .banner-section .sale-artwork-panel .gallery-lists .list-item a,
+.content-section .banner-section .sale-artwork-panel .gallery-lists .list-item div,
+.content-section .banner-section .sale-artwork-panel .gallery-lists .list-item b {
+	color: #1f1f1f;
+}
+.content-section .banner-section .sale-artwork-panel .gallery-lists .list-item del {
+	color: #595959;
+}
+.sale-price-text,
+.private-listing-text {
+	color: #b42318;
+	font-weight: 700;
+}
 .content-section .banner-section .art-work-content .bottom-content .gallery-lists .list-item br {
     display: none;
 }
@@ -1564,6 +1582,15 @@ footer .footer-container .footer-wrapper .top-footer .footer-items:first-child .
     font-weight: 400;
     text-align: center;
 }
+.onload-modal .privacy-content p {
+	color: #262626;
+}
+.onload-modal .privacy-content p a {
+	color: #0b57d0;
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
 .onload-modal .modal-body .inner-content .form-btn {
     text-align: center;
 }
@@ -1585,7 +1612,7 @@ footer .footer-container .footer-wrapper .top-footer .footer-items:first-child .
 }
 .onload-modal .form-btn button.btn:hover {
     background: #fff;
-    color: #fff;
+    color: #262626;
 }
 .modal.onload-modal .modal-content {
     border-radius: 0;
