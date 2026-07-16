@@ -226,7 +226,7 @@
 						
 						<cfif gallery_price EQ 0 OR gallery_price EQ ''>
 							
-							<span style="color: red;">
+							<span style="color: ##b42318;">
 								Price On Request
 							</span>
 						 <cfelse>
