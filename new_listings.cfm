@@ -231,7 +231,7 @@
                                                                         <div class="select-option">
                                                                             <cfoutput>
                                                                                 <!--- <form name="dropdownSearchForlistings"> --->
-                                                                                    <select name="artist" id="artist" class="select2" onChange="artistClick()">
+                                                                                    <select name="artist" id="artist" class="select2" aria-label="Search by artist" onChange="artistClick()">
                                                                                         <option value="">Search By Artist</option>
                                                                                             <cfloop query="getArtists">
                                                                                                 <option value="#HTMLEditFormat(manufacturer)#">#HTMLEditFormat(manufacturer)#</option>
@@ -245,7 +245,7 @@
                                                                     <div class="col-lg-2 col-md-4 col-sm-6 col-12 mt-2 mb-2">
                                                                         <div class="select-option input-field">
                                                                             <!--- <form name="dropdownSearchForlistings" > --->
-                                                                                <select name="artSubject" id="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" onChange="artistClick()">
+                                                                                <select name="artSubject" id="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" aria-label="Search by subject" onChange="artistClick()">
                                                                                     <option value="">Search by Subject</option>
                                                                                     <!--- Loop through the query results to create option tags --->
                                                                                     <cfloop query="qEmployees">
@@ -260,7 +260,7 @@
                                                                     <div class="col-lg-2 col-md-4 col-sm-6 col-12 mt-2 mb-2">
                                                                         <div class="select-option input-field">
                                                                             <!--- <form name="dropdownSearchForlistings"> --->
-                                                                                <select name="artStyle" id="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" onChange="artistClick()">
+                                                                                <select name="artStyle" id="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" aria-label="Search by style" onChange="artistClick()">
                                                                                     <option value="">Search by Style</option>
                                                                                     <cfloop query="qGetStyle">
                                                                                         <option value="#filterName#">#filterName#</option>
@@ -273,7 +273,7 @@
                                                                     <div class="col-lg-2 col-md-4 col-sm-6 col-12 mt-2 mb-2">
                                                                         <div class="select-option input-field">
                                                                             <!--- <form name="dropdownSearchForlistings" > --->
-                                                                                <select name="artSize" id="artSize" class="chosen-select m-0" data-placeholder="Search by Size" onChange="artistClick()">
+                                                                                <select name="artSize" id="artSize" class="chosen-select m-0" data-placeholder="Search by Size" aria-label="Search by size" onChange="artistClick()">
                                                                                     <option value="">Search by Size</option>
                                                                                     <cfloop query="qGetSize">
                                                                                         <option value="#filterName#" <cfif isDefined('url.Size') and url.Size EQ filterName >selected</cfif> >#filterName#</option>
@@ -287,7 +287,7 @@
                                                                     <div class="col-lg-2 col-md-4 col-sm-6 col-12 mt-2 mb-2">
                                                                         <div class="select-option input-field">
                                                                             <!--- <form name="dropdownSearchForlistings" > --->
-                                                                                <select name="artType" id="artType" class="chosen-select m-0" data-placeholder="Search by Type" onChange="artistClick()">
+                                                                                <select name="artType" id="artType" class="chosen-select m-0" data-placeholder="Search by Type" aria-label="Search by type" onChange="artistClick()">
                                                                                     <option value="">Search by Type</option>
                                                                                     <cfloop query="qGetType">
                                                                                         <option value="#filterName#" <cfif isDefined('url.Type') and url.Type EQ filterName >selected</cfif> >#filterName#</option>
@@ -301,7 +301,7 @@
                                                                         <div class="select-option">
                                                                             <cfoutput>
                                                                                 <!--- <form > --->
-                                                                                    <select name="priceOrder" id="priceOrder" onChange="artistClick()">
+                                                                                    <select name="priceOrder" id="priceOrder" aria-label="Sort results" onChange="artistClick()">
                                                                                         <!--- <option value="">Sort</option> --->
 
                                                                                         <option value="newest" selected>Newest </option>

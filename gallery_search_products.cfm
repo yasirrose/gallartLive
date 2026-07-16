@@ -62,7 +62,7 @@
 				<div class="row input-form">
 						<div class="product-form-columns">
 							<div class="select-option input-field">
-								<select name="artSubject" id="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" onChange="artistClick()">
+								<select name="artSubject" id="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" aria-label="Search by subject" onChange="artistClick()">
 									<option value="">Search by Subject</option>
 									<!--- Loop through the query results to create option tags --->
 									<cfoutput query="qEmployees">
@@ -79,7 +79,7 @@
 						</cfquery>
 						<div class="product-form-columns">
 							<div class="select-option input-field">
-								<select name="artStyle" id="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" onChange="artistClick()">
+								<select name="artStyle" id="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" aria-label="Search by style" onChange="artistClick()">
 									<option value="">Search by Style</option>
 									<cfoutput query="qGetStyle">
 										<option value="#filterName#" <cfif isDefined('url.Style') and url.Style EQ filterName >selected</cfif>>#filterName#</option>
@@ -109,7 +109,7 @@
 						</cfquery>
 					<div class="product-form-columns">
 						<div class="select-option input-field">
-							<select name="artSize" id="artSize" class="chosen-select m-0" data-placeholder="Search by Size" onChange="artistClick()">
+							<select name="artSize" id="artSize" class="chosen-select m-0" data-placeholder="Search by Size" aria-label="Search by size" onChange="artistClick()">
 								<option value="">Search by Size</option>
 								<cfoutput query="qGetSize">
 									<option value="#filterName#" <cfif isDefined('url.Size') and url.Size EQ filterName >selected</cfif>>#filterName#</option>
@@ -129,7 +129,7 @@
 					</cfquery>
 					<div class="product-form-columns">
 						<div class="select-option input-field">
-							<select name="artType" id="artType" class="chosen-select m-0" data-placeholder="Search by Type" onChange="artistClick()">
+							<select name="artType" id="artType" class="chosen-select m-0" data-placeholder="Search by Type" aria-label="Search by type" onChange="artistClick()">
 								<option value="">Search by Type</option>
 								<cfoutput query="qGetType">
 									<option value="#filterName#" <cfif isDefined('url.Type') and url.Type EQ filterName >selected</cfif> >#filterName#</option>
@@ -148,7 +148,7 @@
 							
 							<!--- <label>Order By Sale Price:</label> --->
 							<div class="select-option">
-							   <select name="priceOrder" id="priceOrder" onChange="artistClick();">
+							   <select name="priceOrder" id="priceOrder" aria-label="Sort results" onChange="artistClick();">
 									 <!--- <option value="">Sort</option> --->
 									 
 									 <option value="newest" <cfif isDefined('form.priceOrder') and priceOrder eq 'newest'>selected</cfif>>Newest</option>
