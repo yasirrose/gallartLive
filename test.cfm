@@ -1,4 +1,95 @@
-<!--- <cfdump var="testing"> --->
+<!--- <cfset mailStatus = structNew()>
+<cfset mailStatus.success = false>
+<cfset mailStatus.message = "">
+<cfset mailStatus.detail = "">
+
+<cftry>
+	<cfmail server="#servername#" username="onli16@onlinegalleryart.com"
+	password="re3objec" to="cheerspos.test@gmail.com" from="onli16@onlinegalleryart.com" subject="Gallery Art - Welcome New Member" type="HTML" spoolenable="false">
+		<font style="font-size: 10pt; font-family: Arial;">
+		Thank you, asdfgh for registering as a Member at www.gallart.com. <br><br>
+		Your password is:<br>
+		qwert<br><br>
+		Please keep it in a safe place.<br><br>
+		You are now ready to list your requests!<br><br>
+		asdf
+		<br><br>
+	</cfmail>
+
+	<cfset mailStatus.success = true>
+	<cfset mailStatus.message = "SMTP connection worked and the email was sent successfully.">
+<cfcatch type="any">
+	<cfset mailStatus.message = cfcatch.message>
+	<cfset mailStatus.detail = cfcatch.detail>
+	<cfset mailStatus.error = cfcatch>
+</cfcatch>
+</cftry>
+
+<cfdump var="#mailStatus#" abort="true"> --->
+
+
+<cfset mailStatus = structNew()>
+<cfset mailStatus.success = false>
+<cfset mailStatus.message = "">
+<cfset mailStatus.detail = "">
+<cfset smtpConfig = structNew()>
+
+<!--- Toggle this between "sendgrid" and "gmail" for testing. --->
+<cfset smtpConfig.provider = "sendgriddd">
+
+<cfif smtpConfig.provider EQ "sendgrid">
+	<cfset smtpConfig.server = "smtp.sendgrid.net">
+	<cfset smtpConfig.username = "apikey">
+	<cfset smtpConfig.password = "PASTE_FULL_SENDGRID_API_KEY_HERE">
+	<cfset smtpConfig.fromEmail = "Sales@GallArt.com">
+<cfelse>
+	<cfset smtpConfig.server = servername>
+	<cfset smtpConfig.username = "Sales@GallArt.com">
+	<!--- <cfset smtpConfig.password = "ylzwtvepstcsammm"> --->
+	<cfset smtpConfig.password = "nrsnmsnwgdcfiavj">
+	<cfset smtpConfig.fromEmail = "Sales@GallArt.com">
+</cfif>
+
+<cftry>
+	<cfmail 
+		server="#smtpConfig.server#" 
+		username="#smtpConfig.username#"
+		password="#smtpConfig.password#" 
+		to="cheerspos.test@gmail.com" 
+		from="#smtpConfig.fromEmail#" 
+		port="587"
+		usetls="yes"
+		spoolenable="false"
+		subject="Order - Confirmation" 
+		type="HTML"
+	>
+		<br><br>
+		Thank you very much for your order.
+		<br><br>
+		If you have any questions regarding your order,
+		please reference it by using the order ID listed below.
+		<br><br>
+		Internet Order Number:  123
+		<br><br>
+		Total:  1234
+		<br><br>
+		test
+		<br><br>
+	</cfmail>
+
+	<cfset mailStatus.success = true>
+	<cfset mailStatus.message = "SMTP connection worked and the mail was handed off successfully.">
+	<cfset mailStatus.provider = smtpConfig.provider>
+<cfcatch type="any">
+	<cfset mailStatus.message = cfcatch.message>
+	<cfset mailStatus.detail = cfcatch.detail>
+	<cfset mailStatus.provider = smtpConfig.provider>
+	<cfset mailStatus.server = smtpConfig.server>
+	<cfset mailStatus.error = cfcatch>
+</cfcatch>
+</cftry>
+
+<cfdump var="#mailStatus#" abort="true">
 
 <cfoutput>
     <h3>ColdFusion Server Info</h3>
@@ -13,6 +104,105 @@
 
 <cfabort>
 <cfdump var="test" abort="true">
+
+
+==================
+<cfset mailStatus = structNew()>
+<cfset mailStatus.success = false>
+<cfset mailStatus.firstMailSent = false>
+<cfset mailStatus.secondMailSent = false>
+<cfset mailStatus.message = "">
+<cfset mailStatus.detail = "">
+
+<cftry>
+	<cfmail 
+		server="#servername#"
+		username="onli16@onlinegalleryart.com"
+		password="re3objec" 
+		to="cheerspos.test@gmail.com" 
+		from="onli16@onlinegalleryart.com" 
+		subject="Order - Confirmation" 
+		type="HTML"
+		spoolenable="false"
+	>
+		<br><br>
+		Thank you very much for your order.
+		<br><br>
+		If you have any questions regarding your order,
+		please reference it by using the order ID listed below.
+		<br><br>
+		Internet Order Number: 12345
+		<br><br>
+		Total: $1,234.00
+		<br><br>
+		GallArt
+		<br><br>
+	</cfmail>
+
+	<cfset mailStatus.firstMailSent = true>
+
+	<cfmail 
+		server="#servername#"
+		username="onli16@onlinegalleryart.com"
+		password="re3objec" 
+		to="cheerspos.test@gmail.com"
+		from="onli16@onlinegalleryart.com" 
+		subject="GallArt.com <> Buying & Selling Fine Art <> New Order Placed" 
+		type="HTML"
+		spoolenable="false"
+	> 
+		<br><br>
+		An order was placed on Jul 08, 2026.
+		<br><br>
+		Shipping Name: Test Customer<br>
+		Address: <br>
+		123 Test Street Suite 1<br>
+		Test City, TS 12345<br>
+		USA<br>
+		Phone: 0000000000<br>
+		Email: cheerspos.test@gmail.com<br>
+		Order - 12345<br>
+		Total - $1,234.00<br><br>
+		<a href="http://www.gallart.com/admin">Click Here to review Order</a><br>
+		Click the Log In button in the upper right corner of your screen, enter your password, then click Orders from the top menu.
+	</cfmail>
+
+	<cfset mailStatus.secondMailSent = true>
+	<cfset mailStatus.success = true>
+	<cfset mailStatus.message = "Both test emails were sent successfully.">
+<cfcatch type="any">
+	<cfset mailStatus.message = cfcatch.message>
+	<cfset mailStatus.detail = cfcatch.detail>
+	<cfset mailStatus.error = cfcatch>
+</cfcatch>
+</cftry>
+
+<cfdump var="#mailStatus#" abort="true">
+
+
+===============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--- <CFQUERY NAME="test" datasource="#dsource#" dbtype="ODBC" username="#uname#" password="#pword#">
 insert into users
 (fname,lname,email,password)
@@ -662,11 +852,6 @@ datestamp DATETIME NOT NULL DEFAULT (GETDATE())
 
 
 	
-
-
-
-
-
 
 
 
