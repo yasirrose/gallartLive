@@ -172,11 +172,16 @@
 
 <script type="application/ld+json">
 {
-	"@type": "LocalBusiness",
+	"@context": "https://schema.org",
+	"@type": "ArtGallery",
+	"@id": "#JSStringFormat(application.siteCanonicalBaseUrl)#/##gallery",
 	"name": "#JSStringFormat(application.siteName)#",
 	"url": "#JSStringFormat(application.siteCanonicalBaseUrl)#",
-	"logo": "#JSStringFormat(application.siteCanonicalBaseUrl)#/img/djlogo.gif",
+	"description": "#JSStringFormat(seoDescriptionDefault)#",
+	"logo": "#JSStringFormat(application.siteCanonicalBaseUrl)#/img_logo.jpg",
+	"image": "#JSStringFormat(application.siteCanonicalBaseUrl)#/img_logo.jpg",
 	"telephone": "+1-305-932-6166",
+	"priceRange": "$$",
 	"address": {
 		"@type": "PostalAddress",
 		"streetAddress": "20633 Biscayne Blvd Suite C2",
@@ -191,7 +196,11 @@
 		"contactType": "customer service"
 	}],
 	"sameAs": [
-		"https://www.facebook.com/pages/GallArt/119056118127427"
+		"https://www.facebook.com/pages/GallArt/119056118127427",
+		"https://instagram.com/gallartcom/",
+		"https://twitter.com/GallArtcom",
+		"https://www.pinterest.com/gallartcom/",
+		"https://www.linkedin.com/company/fine-art-gallery"
 	]
 }
 </script>
