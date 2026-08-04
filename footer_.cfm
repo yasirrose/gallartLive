@@ -97,7 +97,7 @@
 									<ul>
 										<li>
 											<a href="https://www.facebook.com/pages/GallArt/119056118127427?ref=hl" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/facebook-sm.png" border="0" alt="facebook" /> 
+												 <img src="https://gallart.com/images/social_icons/facebook-sm.png" width="28" height="28" border="0" alt="facebook" />
 												<!-- - <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-facebook-square"></i>
 												</p> - -->
@@ -105,7 +105,7 @@
 										</li>
 										<li>
 											<a href="https://instagram.com/gallartcom/" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/instagram-sm.png" border="0" alt="instagram" /> 
+												 <img src="https://gallart.com/images/social_icons/instagram-sm.png" width="28" height="28" border="0" alt="instagram" />
 												<!--- <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-instagram-square"></i>
 												</p> --->
@@ -113,7 +113,7 @@
 										</li>
 										<li>
 											<a href="https://twitter.com/GallArtcom" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/twitter-sm.png" border="0" alt="twitter" /> 
+												 <img src="https://gallart.com/images/social_icons/twitter-sm.png" width="28" height="28" border="0" alt="twitter" />
 												<!--- <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-twitter-square"></i>
 												</p> --->
@@ -121,7 +121,7 @@
 										</li>
 										<li>
 											<a href="https://www.pinterest.com/gallartcom/" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/pinterest-sm.png" border="0" alt="pinterest" /> 
+												 <img src="https://gallart.com/images/social_icons/pinterest-sm.png" width="28" height="28" border="0" alt="pinterest" />
 												<!--- <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-pinterest-square"></i>
 												</p> --->
@@ -129,7 +129,7 @@
 										</li>
 										<li>
 											<a href="https://www.linkedin.com/company/fine-art-gallery" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/linkedin.png?x=y" border="0" alt="linkedin" /> 
+												 <img src="https://gallart.com/images/social_icons/linkedin.png?x=y" width="28" height="28" border="0" alt="linkedin" />
 												<!--- <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-linkedin"></i>
 												</p> --->
@@ -138,7 +138,7 @@
 										</li>
 										<li>
 											<a href="https://www.tiktok.com/@gallart.com?_t=8pV8Ytrax5j&_r=1" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/tik-tok.png" border="0" alt="tiktok" /> 
+												 <img src="https://gallart.com/images/social_icons/tik-tok.png" width="28" height="28" border="0" alt="tiktok" />
 												<!--- <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-tiktok"></i>
 												</p> --->
@@ -146,7 +146,7 @@
 										</li>
 										<li>
 											<a href="https://youtu.be/IcsQJXlEMrA?si=Y06pms8b5_vgz3Pq" target="_blank">
-												 <img src="https://gallart.com/images/social_icons/youtube.png" border="0" alt="youtube" /> 
+												 <img src="https://gallart.com/images/social_icons/youtube.png" width="28" height="28" border="0" alt="youtube" />
 												<!--- <p style="font-size:25px; color:##959595;">
 													<i class="fab fa-youtube-square"></i>
 												</p> --->

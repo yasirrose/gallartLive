@@ -45,8 +45,11 @@
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
+        border: 0;
         border-radius: 0 3px 3px 0;
         user-select: none;
+        appearance: none;
+        -webkit-appearance: none;
         background-color: rgba(255, 255, 255, 0.7); /* Add a background to improve visibility */
     }
 
@@ -75,15 +78,15 @@
         <cfoutput query="qGetBanners">
             <div class="slide">
                 <a href="javascript:goxss('#HTMLEditFormat(BANNERIMAGESURL)#')">
-                    <img src="/images/banners/#bannerImage#" alt="Banner Image">
+                    <img src="/images/banners/#bannerImage#" alt="Banner Image" width="1145" height="400" decoding="async"<cfif currentRow EQ 1> fetchpriority="high" loading="eager"</cfif>>
                 </a>
             </div>
         </cfoutput>
     </div>
 
     <!-- Next and previous buttons -->
-    <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-    <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    <button type="button" class="prev" onclick="moveSlide(-1)" aria-label="Previous banner">&#10094;</button>
+    <button type="button" class="next" onclick="moveSlide(1)" aria-label="Next banner">&#10095;</button>
 </div>
 
 <script>

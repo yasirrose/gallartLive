@@ -24,12 +24,12 @@
 				</div>
 				<div class="featured-heading">
 					<div>
-						<h5>
+						<p class="featured-title">
 							<A style="font-weight: 600;" HREF="javascript:goxss('item.cfm?pid=#urlencodedformat(trim(uid))#&artist=#ucase(trim(replace(manufacturer,"'",'')))#&artistname=#urlencodedformat(trim(replace(artist_name_url,"'",'')))#&gallery=GALLART&title=#urlencodedformat(trim(replace(name,"'",'')))#')">#ucase(Name)#</a>
-						</h5>
-						<h5 >
+						</p>
+						<p class="featured-title">
 							#ucase(artist_name)#
-						</h5>
+						</p>
 					</div>
 				</div>
 				

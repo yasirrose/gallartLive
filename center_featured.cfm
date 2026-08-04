@@ -38,11 +38,11 @@
 					</span>
 				</div>
 				<div class="featured-heading" itemscope itemtype="http://schema.org/Person">
-					<h5 itemprop="name">
+					<p class="featured-title" itemprop="name">
 						<a href="/artists/#producturl#" >
 							<!--- <cfset capitalize_artistName = REReplace(artist_name, "\b([a-zA-Z])([a-zA-Z]*)", "\u\1\L\2", "ALL")> --->
 							#artist_name#</a>
-					</h5>
+					</p>
 				</div>
 			</div>
 		
