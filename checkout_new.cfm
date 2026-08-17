@@ -107,18 +107,20 @@
 			function validEntries(frm) {
 
 				let isValid = true;
+				let firstInvalidField = null;
 
 				// Clear old errors
 				document.querySelectorAll('.error-message').forEach(error => error.textContent = '');
 
 				// Helper function
-				function setError(fieldId, message, focus = false) {
+				function setError(fieldId, message) {
 					const errorEl = document.getElementById(fieldId + 'Error');
 					if (errorEl) errorEl.textContent = message;
 
-					if (focus) {
+					// Track the first invalid field to scroll to it
+					if (!firstInvalidField) {
 						const field = document.getElementById(fieldId);
-						if (field) field.focus();
+						if (field) firstInvalidField = field;
 					}
 					isValid = false;
 				}
@@ -186,13 +188,18 @@
 					!phoneRegex.test(fields.phoneNumber)) {
 
 					setError('phoneNumber',
-						'Please enter phone number in format: (xxx) xxx-xxxx',
-						true
+						'Please enter phone number in format: (xxx) xxx-xxxx'
 					);
 				}
 
-				// Stop if invalid
-				if (!isValid) return false;
+				// Stop if invalid — scroll to first error field
+				if (!isValid) {
+					if (firstInvalidField) {
+						firstInvalidField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+						firstInvalidField.focus();
+					}
+					return false;
+				}
 
 				// Prevent double submit
 				if (typeof formSubmited !== "undefined" && formSubmited === 1) {
@@ -204,6 +211,21 @@
 				return true;
 			}
 			
+			// Reset form — clear validation messages and scroll to form top
+			function resetCheckoutForm() {
+				// Clear all error messages
+				document.querySelectorAll('.error-message').forEach(function(el) {
+					el.textContent = '';
+				});
+				// Reset double-submit guard
+				formSubmited = 0;
+				// Scroll to top of the checkout form
+				var form = document.getElementById('checkOutForm');
+				if (form) {
+					form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				}
+			}
+
 			// Credit card validation using Luhn algorithm
 			function isValidCreditCard(number) {
 				let sum = 0;
@@ -966,7 +988,7 @@
 																</div>
 																<div class="text-center mt-3">
 																	<input type="submit" value="Review Order" id="submitBtn" class="pinkSubmit">
-																	<input type="reset" value="Reset Form" class="pinkSubmit">
+																	<input type="reset" value="Reset Form" class="pinkSubmit" onclick="resetCheckoutForm()">
 																</div>
 																<input type="Hidden" name="fk_locations" value="1">
 															</cfform>
