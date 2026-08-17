@@ -136,7 +136,7 @@
             Gallery Price: #dollarformat(gallery_price)#
             </cfif></font><Br>
             <cfif len(special_price) and application.showSalePrice EQ 1>
-            <span style="color: ##ff0000">Sale Price: #dollarFormat(special_price)#</span>
+            <span class="sale-price-text">Sale Price: #dollarFormat(special_price)#</span>
             </cfif></font><Br>
             <span class="pinkText">
             <cfif special_price eq 0>
@@ -157,7 +157,7 @@
                             &nbsp; 
 
                                 <b>
-                                <span style="color: ##ff0000;">
+                                <span class="sale-price-text">
                                     #DollarFormat(special_price)# 
                                 </span>
                             </b>
@@ -183,7 +183,7 @@
                                 <del>#DollarFormat(retail_price)# </del>
                                 &nbsp; 
                                     <b>
-                                        <span style="color: ##ff0000;">
+                                        <span class="sale-price-text">
                                         #DollarFormat(special_price)# 
                                         </span>
                                     </b>
@@ -209,7 +209,7 @@
                                 <del>#DollarFormat(gallery_price)# </del>
                                 &nbsp; 
                                     <b>
-                                        <span style="color: ##ff0000;">
+                                        <span class="sale-price-text">
                                         #DollarFormat(special_price)# 
                                         </span>
                                     </b>
@@ -227,7 +227,7 @@
             </span>
             <br>
         Art ID:&nbsp;#modelno#<br><br>
-        <cfif len(fk_users)><span style="font-size: 12px; font-weight: bold; color: ##ff0000;">PRIVATE LISTING</span><br><br>
+        <cfif len(fk_users)><span class="private-listing-text" style="font-size: 12px;">PRIVATE LISTING</span><br><br>
         </cfif>
         <!--- <cfif makeoffer_buttons.show EQ 1>
             <a href="make_offer.cfm?pid=#uid#&xss=#xss#"><img src="images/make_offer.gif" border="0"></a>
