@@ -179,7 +179,25 @@
 				});
 			</script>
 	   </cfoutput>
-	   <link href="/stylesheet_.min.css" rel="stylesheet" type="text/css">
+	   <link href="/stylesheet_.min.css?v=20260817" rel="stylesheet" type="text/css">
+	   <style>
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-list.draggable .slick-slide .img-sec a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-list.draggable .slick-slide .img-sec img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-list.draggable .slick-slide .nav-slide-item .img-sec img {
+			display: block;
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	   </style>
 	   <script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-34565365-1']);
