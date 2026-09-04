@@ -104,7 +104,7 @@ a.SeeMore:hover {
 </script>
 
 
-<link href="/stylesheet_.min.css?x=<cfoutput>#RandRange(0,100)#</cfoutput>" rel="stylesheet" type="text/css">
+<link href="/stylesheet_.min.css?v=1" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
