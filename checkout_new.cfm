@@ -140,6 +140,7 @@
 
 				const phoneType = document.querySelector("[name='phoneType']").value;
 				const selectedCardType = document.querySelector("[name='cardtype']").value;
+				const recaptchaField = document.querySelector("#gRecaptchaCheckout iframe") || document.getElementById("gRecaptchaCheckout");
 
 				const phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
 				const emailRegex = /\S+@\S+\.\S+/;
@@ -192,11 +193,32 @@
 					);
 				}
 
+				// reCAPTCHA validation
+				if (typeof grecaptcha !== 'undefined') {
+					const recaptcha = grecaptcha.getResponse();
+					if (!recaptcha) {
+						setError("recaptcha", "Please confirm you are not a robot.");
+						if (!firstInvalidField) {
+							firstInvalidField = recaptchaField;
+						}
+						isValid = false;
+					}
+				} else {
+					// If grecaptcha is not loaded, show error
+					setError("recaptcha", "Please confirm you are not a robot.");
+					if (!firstInvalidField) {
+						firstInvalidField = recaptchaField;
+					}
+					isValid = false;
+				}
+
 				// Stop if invalid — scroll to first error field
 				if (!isValid) {
 					if (firstInvalidField) {
 						firstInvalidField.scrollIntoView({ behavior: 'smooth', block: 'center' });
-						firstInvalidField.focus();
+						if (typeof firstInvalidField.focus === "function") {
+							firstInvalidField.focus({ preventScroll: true });
+						}
 					}
 					return false;
 				}
@@ -208,6 +230,24 @@
 				}
 
 				formSubmited = 1;
+				
+				// Add reCAPTCHA response to form before submitting (to avoid ColdFusion hyphen issue)
+				if (typeof grecaptcha !== 'undefined') {
+					const recaptchaResponse = grecaptcha.getResponse();
+					// Create a hidden input with safe name
+					let input = document.createElement('input');
+					input.type = 'hidden';
+					input.name = 'recaptcha_response';
+					input.value = recaptchaResponse;
+					frm.appendChild(input);
+					
+					// Remove the g-recaptcha-response field to prevent ColdFusion evaluate error
+					const recaptchaField = frm.querySelector('textarea[name="g-recaptcha-response"]');
+					if (recaptchaField) {
+						recaptchaField.parentNode.removeChild(recaptchaField);
+					}
+				}
+				
 				return true;
 			}
 			
@@ -219,6 +259,10 @@
 				});
 				// Reset double-submit guard
 				formSubmited = 0;
+				// Reset reCAPTCHA
+				if (typeof grecaptcha !== 'undefined') {
+					grecaptcha.reset();
+				}
 				// Scroll to top of the checkout form
 				var form = document.getElementById('checkOutForm');
 				if (form) {
@@ -985,6 +1029,11 @@
 																			</div>
 																		</div>
 																	</div>
+
+																	<div class="input-field pt-3">
+																		<div class="g-recaptcha" id="gRecaptchaCheckout" data-sitekey="6LeZlyQrAAAAAIeJXW8lCPBOCfgLcPgPxounXa9i"></div>
+																		<span class="error-message" id="recaptchaError"></span>
+																	</div>
 																</div>
 																<div class="text-center mt-3">
 																	<input type="submit" value="Review Order" id="submitBtn" class="pinkSubmit">
@@ -1306,6 +1355,8 @@
 					top: 10px;
 				}
 			</style>
+
+			<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 			
 
 	</body>
