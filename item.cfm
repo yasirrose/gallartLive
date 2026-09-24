@@ -96,17 +96,66 @@
 
 	   <cfoutput>
 			<cfif isDefined('productinforMeta') and productinforMeta.recordCount GT 0>
-				<cfset meta_image = "https://gallart.com/img/#productinforMeta.uid#.jpg">
+				<cfset pageImage = "https://gallart.com/img/#productinforMeta.uid#.jpg">
+				<cfset meta_image = pageImage>
 				<cfset meta_url = "https://gallart.com/artist/#artistSlugformeta#/#productSlugformeta#">
 			</cfif>
-			
 	   </cfoutput>
 
 	   <cfinclude template="meta.cfm">
+
+	   <cfif isDefined('productinforMeta') and productinforMeta.recordCount GT 0>
+	   <cfoutput>
+	   <script type="application/ld+json">
+	   {
+		 "@context": "https://schema.org",
+		 "@graph": [
+		   {
+			 "@type": "VisualArtwork",
+			 "@id": "https://gallart.com/artist/#JSStringFormat(artistSlugformeta)#/#JSStringFormat(productSlugformeta)###artwork",
+			 "name": "#JSStringFormat(productinforMeta.name)#",
+			 "image": "https://gallart.com/img/#productinforMeta.uid#.jpg",
+			 "description": "#JSStringFormat(productinforMeta.name & ' by ' & productinforMeta.manufacturer)#",
+			 "artform": "#JSStringFormat(productinforMeta.path)#",
+			 "creator": {
+			   "@type": "Person",
+			   "name": "#JSStringFormat(productinforMeta.manufacturer)#"
+			 }
+		   },
+		   {
+			 "@type": "Product",
+			 "@id": "https://gallart.com/artist/#JSStringFormat(artistSlugformeta)#/#JSStringFormat(productSlugformeta)###product",
+			 "name": "#JSStringFormat(productinforMeta.name)# by #JSStringFormat(productinforMeta.manufacturer)#",
+			 "image": "https://gallart.com/img/#productinforMeta.uid#.jpg",
+			 "description": "#JSStringFormat(productinforMeta.name & ' by ' & productinforMeta.manufacturer)#",
+			 "sku": "#JSStringFormat(productinforMeta.uid)#",
+			 "brand": {
+			   "@type": "Brand",
+			   "name": "#JSStringFormat(productinforMeta.manufacturer)#"
+			 },
+			 "offers": {
+			   "@type": "Offer",
+			   "url": "https://gallart.com/artist/#JSStringFormat(artistSlugformeta)#/#JSStringFormat(productSlugformeta)#",
+			   "priceCurrency": "USD",
+			   "price": "<cfif isNumeric(productinforMeta.gallery_price) AND val(productinforMeta.gallery_price) GT 0>#val(productinforMeta.gallery_price)#<cfelse>0</cfif>",
+			   "availability": "https://schema.org/InStock",
+			   "seller": {
+				 "@type": "ArtGallery",
+				 "name": "Gallart",
+				 "url": "https://gallart.com"
+			   }
+			 }
+		   }
+		 ]
+	   }
+	   </script>
+	   </cfoutput>
+	   </cfif>
+
+	   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+	   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 	   <cfoutput>
 		  <script language="JavaScript" src="/js/utils.js"></script>
-		  <!--- <script language="JavaScript" src="./js/jquery-1.2.6.min.js"></script> --->
-		  <!--- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- Ensure jQuery is loaded first --> --->
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		  <script language="JavaScript" src="/js/slimbox2.js"></script>
 		  <link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">

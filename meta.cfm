@@ -135,6 +135,10 @@
 <cfif isDefined("pageCanonicalPath") AND len(trim(pageCanonicalPath))>
 		<cfset canonicalPath = trim(pageCanonicalPath)>
 </cfif>
+<cfparam name="seoImage" default="#application.siteCanonicalBaseUrl#/img_logo.jpg">
+<cfif isDefined("pageImage") AND len(trim(pageImage))>
+		<cfset seoImage = trim(pageImage)>
+</cfif>
 
 <cfif len(canonicalPath) GT 1>
 	<cfset canonicalPath = reReplace(canonicalPath, "/+$", "", "one")>
@@ -165,10 +169,12 @@
 <meta property="og:title" content="#HTMLEditFormat(seoTitle)#">
 <meta property="og:description" content="#HTMLEditFormat(seoDescription)#">
 <meta property="og:url" content="#HTMLEditFormat(canonicalUrl)#">
+<meta property="og:image" content="#HTMLEditFormat(seoImage)#">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="#HTMLEditFormat(seoTitle)#">
 <meta name="twitter:description" content="#HTMLEditFormat(seoDescription)#">
+<meta name="twitter:image" content="#HTMLEditFormat(seoImage)#">
 
 <script type="application/ld+json">
 {
@@ -178,10 +184,12 @@
 	"name": "#JSStringFormat(application.siteName)#",
 	"url": "#JSStringFormat(application.siteCanonicalBaseUrl)#",
 	"description": "#JSStringFormat(seoDescriptionDefault)#",
+	"foundingDate": "1989",
 	"logo": "#JSStringFormat(application.siteCanonicalBaseUrl)#/img_logo.jpg",
-	"image": "#JSStringFormat(application.siteCanonicalBaseUrl)#/img_logo.jpg",
+	"image": "#JSStringFormat(seoImage)#",
 	"telephone": "+1-305-932-6166",
-	"priceRange": "$$",
+	"email": "info@gallart.com",
+	"priceRange": "$$$$",
 	"address": {
 		"@type": "PostalAddress",
 		"streetAddress": "20633 Biscayne Blvd Suite C2",
@@ -190,10 +198,17 @@
 		"postalCode": "33180",
 		"addressCountry": "US"
 	},
+	"geo": {
+		"@type": "GeoCoordinates",
+		"latitude": "25.9667",
+		"longitude": "-80.1444"
+	},
 	"contactPoint": [{
 		"@type": "ContactPoint",
 		"telephone": "+1-305-932-6166",
-		"contactType": "customer service"
+		"contactType": "customer service",
+		"areaServed": "US",
+		"availableLanguage": ["English", "Spanish"]
 	}],
 	"sameAs": [
 		"https://www.facebook.com/pages/GallArt/119056118127427",
