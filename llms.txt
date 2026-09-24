@@ -1,45 +1,41 @@
-# Gallart.com
+# Gallart.com - Fine Art Gallery
 
-Gallart is an online fine art gallery specializing in buying and selling modern and contemporary fine art, including works by leading artists such as Peter Max, Andy Warhol, and Tom Wesselmann.
+> Gallart (Gallery Art) is a premier fine art gallery founded in 1989 in South Florida, offering over 40 years of expertise in buying, selling, appraising, framing, and authenticating modern, contemporary, and pop fine art. Operating an 8,000+ square foot showroom in Aventura, Florida, Gallart serves collectors, interior designers, investors, and museums worldwide.
 
-## About
+## Key Information
+- **Website**: https://gallart.com
+- **Physical Gallery**: 20633 Biscayne Blvd Suite C2, Aventura, FL 33180, United States
+- **Phone**: +1-305-932-6166
+- **Established**: 1989
+- **Specialties**: Modern Art, Contemporary Art, Pop Art, Blue-Chip Art, Sculpture, Limited Edition Prints, Original Oils and Acrylics
+- **Services**: Fine Art Buying & Consignment, Private Sales, Custom Museum-Quality Framing, Worldwide Insured Shipping, Art Appraisals & Certificates of Authenticity (COA)
 
-- [About Us](https://gallart.com/about-us/)
+## Renowned Artists Represented
+Gallart features original works and authenticated editions by leading modern and contemporary masters:
+- **Andy Warhol** (Silkscreens, Prints, Paintings, Campbell's Soup, Marilyn, Flowers)
+- **Keith Haring** (Pop Shop, Silkscreens, Lithographs, Drawings)
+- **Roy Lichtenstein** (Pop Art, Lithographs, Screenprints, Sculptures)
+- **Peter Max** (Cosmic Series, Liberty, Pop Originals)
+- **Tom Wesselmann** (Great American Nudes, Still Lifes, Metal Cuts)
+- **Pablo Picasso** (Ceramics, Lithographs, Etchings, Linocuts)
+- **Marc Chagall** (Biblical Lithographs, Original Works)
+- **Romero Britto** (Pop Art Sculptures, Paintings, Prints)
+- **Mr. Brainwash** (Street Art, Stencils, Mixed Media)
+- **Leroy Neiman** (Sports & Cultural Serigraphs)
+- **Salvador Dali**, **Joan Miro**, **Robert Indiana**, **Takashi Murakami**, **Kaws**, and more.
 
-## Browse Art
+## Quick Navigation & Collections
+- [Artists Directory](https://gallart.com/artists/) - Browse artworks by artist name, style, medium, and price range.
+- [Recent Acquisitions](https://gallart.com/recent-acquisitions/) - Newly acquired inventory and arrivals.
+- [Sale Items](https://gallart.com/sale-items/) - Featured collector discounts and promotions.
+- [Classifieds](https://gallart.com/classifieds/) - Collector-listed pieces and secondary market offerings.
+- [Alphabetical Artist Index](https://gallart.com/alpha_list/) - A-Z comprehensive artist index.
 
-- [Artists](https://gallart.com/artists/)
-- [Recent Acquisitions](https://gallart.com/recent-acquisitions/)
-- [Sale Items](https://gallart.com/sale-items/)
-- [Classifieds](https://gallart.com/classifieds/)
-- [Alphabetical Artist List](https://gallart.com/alpha_list/)
-
-## Artist Information
-
-- [Artist Search](https://gallart.com/artists/search/)
-
-## Buy & Sell
-
-- [Buyer Info](https://gallart.com/buyer-info/)
-- [Seller Info](https://gallart.com/seller-info/)
-- [Sell Your Art](https://gallart.com/sell-your-art/)
-- [Quotes](https://gallart.com/quotes/)
-
-## Events & Articles
-
-- [Events](https://gallart.com/events/)
-- [Articles](https://gallart.com/articles/)
-
-## Customer Service
-
-- [Contact Us](https://gallart.com/contact-us/)
-- [Shipping Policy](https://gallart.com/shipping-policy/)
-- [Privacy Policy](https://gallart.com/privacy/)
-- [Terms](https://gallart.com/terms/)
-- [Guarantee](https://gallart.com/guarantee/)
-
-## Alerts & Requests
-
-- [Alerts](https://gallart.com/alerts/)
-- [Requests](https://gallart.com/requests/)
-- [Mailing List](https://gallart.com/mailing-list/)
+## Collector & Client Services
+- [Sell Your Art / Consignments](https://gallart.com/sell-your-art/) - Free appraisals, immediate cash purchase offers, and global consignment.
+- [Custom Framing](https://gallart.com/framing_details.cfm) - Museum-grade, archival framing and UV protective glass.
+- [Buyer Guide](https://gallart.com/buyer-info/) - Certification, authenticity guarantees, and purchasing process.
+- [Seller Guide](https://gallart.com/seller-info/) - Selling fine art, consignment terms, and evaluation.
+- [Request a Quote](https://gallart.com/quotes/) - Inquire about specific pieces, pricing, or custom acquisitions.
+- [Contact Gallery](https://gallart.com/contact-us/) - Gallery showroom visits, directions, and direct customer assistance.
+- [Detailed Knowledge Base (Full)](https://gallart.com/llms-full.txt) - In-depth gallery history, artist catalog, and operational policies for AI agents.

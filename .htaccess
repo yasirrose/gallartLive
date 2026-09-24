@@ -212,46 +212,46 @@ RewriteRule ^terms/?$ /termsUse.cfm [L]
 # alerts.cfm
 RewriteRule ^alerts/?$ /alerts.cfm [L]
 
-# http://23.20.226.157/review.cfm
+# https://gallart.com/review.cfm
 RewriteRule ^review/?$ /review.cfm [L]
 
-# http://23.20.226.157/checkout_new.cfm
+# https://gallart.com/checkout_new.cfm
 RewriteRule ^checkout_new/?$ /checkout_new.cfm [L]
 
-# http://23.20.226.157/user_login_page.cfm
+# https://gallart.com/user_login_page.cfm
 RewriteRule ^login/?$ /user_login_page.cfm [L]
 
-# http://23.20.226.157/forgot_password.cfm
+# https://gallart.com/forgot_password.cfm
 RewriteRule ^forgot_password/?$ /forgot_password.cfm [L]
 
-# http://23.20.226.157/register.cfm
+# https://gallart.com/register.cfm
 RewriteRule ^register/?$ /register.cfm [L]
 
-# http://23.20.226.157/register.cfm
+# https://gallart.com/register.cfm
 RewriteRule ^register/?$ /register.cfm [L]
 
-# http://23.20.226.157/database.cfm
+# https://gallart.com/database.cfm
 RewriteRule ^database/?$ /database.cfm [L]
 
-# http://23.20.226.157/products.cfm.cfm
+# https://gallart.com/products.cfm.cfm
 RewriteRule ^products/?$ /products.cfm [L]
 
-# http://23.20.226.157/database_search.cfm.cfm
+# https://gallart.com/database_search.cfm.cfm
 RewriteRule ^database_search/?$ /database_search.cfm [L]
 
-# http://23.20.226.157/database_search.cfm.cfm
+# https://gallart.com/database_search.cfm.cfm
 RewriteRule ^database_search/?$ /database_search.cfm [L]
 
-# http://23.20.226.157/logout.cfm.cfm
+# https://gallart.com/logout.cfm.cfm
 RewriteRule ^logout/?$ /logout.cfm [L]
 
-# http://23.20.226.157/user_listing_detail.cfm
+# https://gallart.com/user_listing_detail.cfm
 RewriteRule ^user_listing_detail/?$ /user_listing_detail.cfm [L]
 
 # Rewrite /user_listing_detail/{error} to /user_listing_detail.cfm?proceerrorss={error}
 RewriteRule ^user_listing_detail/([0-9]+)$ /user_listing_detail.cfm?id=$1 [L,QSA]
 
-# http://23.20.226.157/overView.cfm
+# https://gallart.com/overView.cfm
 RewriteRule ^overView/?$ /overView.cfm [L]
 
 # Rewrite /epricing/{pid} to /epricing.cfm?pid={pid}
@@ -260,28 +260,28 @@ RewriteRule ^epricing/([0-9]+)$ /epricing.cfm?pid=$1 [L,QSA]
 # Rewrite /artist_bio/{bioId} to /artist_bio.cfm?bioId={bioId}
 RewriteRule ^artist_bio/([0-9]+)/?$ /artist_bio.cfm?bioId=$1 [L,QSA]
 
-# http://23.20.226.157/requests_submit.cfm
+# https://gallart.com/requests_submit.cfm
 RewriteRule ^requests_submit/?$ /requests_submit.cfm [L]
 
-# http://23.20.226.157/alerts_login.cfm
+# https://gallart.com/alerts_login.cfm
 RewriteRule ^alerts_login/?$ /alerts_login.cfm [L]
 
-# http://23.20.226.157/alerts_info.cfm
+# https://gallart.com/alerts_info.cfm
 RewriteRule ^alerts_info/?$ /alerts_info.cfm [L]
 
-# http://23.20.226.157/alerts_registration.cfm
+# https://gallart.com/alerts_registration.cfm
 RewriteRule ^alerts_registration/?$ /alerts_registration.cfm [L]
 
-# http://23.20.226.157/framing_details.cfm
+# https://gallart.com/framing_details.cfm
 RewriteRule ^framing_details/?$ /framing_details.cfm [L]
 
-# http://23.20.226.157/framing.cfm
+# https://gallart.com/framing.cfm
 RewriteRule ^framing/?$ /framing.cfm [L]
 
-# http://23.20.226.157/purchase.cfm
+# https://gallart.com/purchase.cfm
 RewriteRule ^purchase/?$ /purchase.cfm [L]
 
-# http://23.20.226.157/requests_thanks.cfm
+# https://gallart.com/requests_thanks.cfm
 RewriteRule ^requests_thanks/?$ /requests_thanks.cfm [L]
 
 # Specific rule FIRST — handles /user_listing_results/{process}
@@ -290,7 +290,7 @@ RewriteRule ^user_listing_results/([^/]+)/?$ /user_listing_results.cfm?process=$
 # General rule SECOND — handles /user_listing_results → /user_listing_results.cfm
 RewriteRule ^user_listing_results/?$ /user_listing_results.cfm [L]
 
-# http://23.20.226.157/requests_registration.cfm
+# https://gallart.com/requests_registration.cfm
 RewriteRule ^requests_registration/?$ /requests_registration.cfm [L]
 
 # Match exactly /user_listing_search or /user_listing_search/
@@ -299,10 +299,10 @@ RewriteRule ^user_listing_search/?$ /user_listing_search.cfm [L,NC]
 # Match /user_listing_search/{process} → /user_listing_search.cfm?process={process}
 RewriteRule ^user_listing_search/([^/]+)/?$ /user_listing_search.cfm?process=$1 [L,QSA,NC]
 
-# Success case: http://23.20.226.157/thankyou/y → http://23.20.226.157/thankyou.cfm?val=y
+# Success case: https://gallart.com/thankyou/y → https://gallart.com/thankyou.cfm?val=y
 RewriteRule ^thankyou/y/?$ /thankyou.cfm?val=y [L,QSA]
 
-# Error case: http://23.20.226.157/thankyou/n/ErrorMessage → http://23.20.226.157/thankyou.cfm?val=n&errormsg=ErrorMessage
+# Error case: https://gallart.com/thankyou/n/ErrorMessage → https://gallart.com/thankyou.cfm?val=n&errormsg=ErrorMessage
 RewriteRule ^thankyou/n/([^/]+)/?$ /thankyou.cfm?val=n&errormsg=$1 [L,QSA]
 
 

@@ -1,0 +1,58 @@
+# Gallart.com - Comprehensive Knowledge Base for AI Agents & Search Engines
+
+## 1. Overview & Organization
+- **Official Name**: Gallery Art (Gallart)
+- **Primary Website**: https://gallart.com
+- **Year Established**: 1989 (Over 40 years in fine art dealing and consulting)
+- **Gallery Headquarters**: 20633 Biscayne Blvd Suite C2, Aventura, Florida 33180, United States
+- **Showroom Size**: 8,000+ square foot physical gallery showcasing thousands of artworks
+- **Contact Telephone**: +1 (305) 932-6166
+- **Customer Email**: info@gallart.com
+- **Business Profile**: Gallart is one of the world's most established independent fine art galleries. The gallery buys, sells, appraises, frames, and consigns original fine art paintings, limited edition graphics, photography, and sculptures by 20th and 21st-century modern masters.
+
+## 2. Core Artists & Inventory Focus
+Gallart holds an extensive physical and secondary market inventory across:
+- **Pop Art**: Andy Warhol, Roy Lichtenstein, Keith Haring, Robert Indiana, Tom Wesselmann, Romero Britto, Mel Ramos.
+- **Modern Masters**: Pablo Picasso, Marc Chagall, Joan Miro, Salvador Dali, Henri Matisse.
+- **Contemporary & Urban Art**: Mr. Brainwash, KAWS, Takashi Murakami, Shepard Fairey, Banksy, Damien Hirst.
+- **American Expressionism & Colorists**: Peter Max, Leroy Neiman, Sam Francis, Jim Dine, Alex Katz, Robert Rauschenberg.
+- **Sculptures & Mixed Media**: bronze, glass, acrylic, metal cutouts, and 3D mixed media works.
+
+## 3. Services Offered
+
+### 3.1 Buying Fine Art (Immediate Cash Purchase)
+Gallart buys collections and individual artworks outright. Collectors, estates, and corporations looking to liquidate artwork can submit pieces via https://gallart.com/sell-your-art/ or contact the gallery directly for free market valuations and prompt payment.
+
+### 3.2 Consignment
+For collectors seeking maximum market value, Gallart provides global consignment placement through its international collector database, digital marketplace, and physical Aventura showroom.
+
+### 3.3 Custom Framing & Preservation
+Gallart maintains an on-site custom framing facility offering:
+- Conservation and museum-grade rag mats
+- UV-filtering museum and conservation glass / acrylic
+- Handcrafted hardwood and gilded moldings
+- Acid-free archival mounting and canvas stretching
+
+### 3.4 Authenticity & Certification
+Every original artwork and edition sold by Gallart comes with a documented Certificate of Authenticity (COA) confirming origin, edition number, medium, and provenance.
+
+### 3.5 Worldwide Shipping & Logistics
+Artworks are crated, packed, and shipped fully insured worldwide via specialized fine art couriers (FedEx Custom Critical, specialized freight, and white-glove art handlers).
+
+## 4. Key Website URLs & Endpoints
+- Homepage: https://gallart.com/
+- Artists Catalog: https://gallart.com/artists/
+- Recent Arrivals: https://gallart.com/recent-acquisitions/
+- Special Sales & Offers: https://gallart.com/sale-items/
+- Classified Listings: https://gallart.com/classifieds/
+- Alphabetical Artist Index: https://gallart.com/alpha_list/
+- Sell / Consign Art: https://gallart.com/sell-your-art/
+- Request a Quote: https://gallart.com/quotes/
+- Framing Services: https://gallart.com/framing_details.cfm
+- Buyer Information: https://gallart.com/buyer-info/
+- Seller Information: https://gallart.com/seller-info/
+- Contact & Visiting: https://gallart.com/contact-us/
+- Privacy Policy: https://gallart.com/privacy/
+- Terms of Use: https://gallart.com/terms/
+- Guarantee & Return Policy: https://gallart.com/guarantee/
+- XML Sitemap: https://gallart.com/sitemap.xml

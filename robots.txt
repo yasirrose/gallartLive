@@ -14,10 +14,11 @@ Disallow: /user_listing_search.cfm
 Disallow: /mail_log.cfm
 Disallow: /forgot_password.cfm
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /sitemap.xml
 Allow: /
 
-# AI search and answer engines: allow public content while keeping private flows blocked.
+# AI search, answer engines, and LLM crawlers
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
 User-agent: GPTBot
@@ -27,6 +28,10 @@ User-agent: ClaudeBot
 User-agent: Claude-User
 User-agent: Claude-SearchBot
 User-agent: PerplexityBot
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: cohere-ai
+User-agent: Amazonbot
 Disallow: /admin/
 Disallow: /extranet/
 Disallow: /vendor/
@@ -42,6 +47,7 @@ Disallow: /user_listing_search.cfm
 Disallow: /mail_log.cfm
 Disallow: /forgot_password.cfm
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /sitemap.xml
 Allow: /
 
