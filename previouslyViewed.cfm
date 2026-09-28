@@ -85,10 +85,10 @@
                                              <a HREF="/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#">
                                                 <div class="img-sec">
                                                 <!-- Dynamic image source -->
-                                                <cfif fileexists("http://#server_name#/img/#productData.uid#.jpg")>
-                                                   <img src="/img/#uid#.jpg" alt="gallery-img">
+                                                <cfif fileexists(expandPath("/img/#productData.uid#.jpg"))>
+                                                   <img src="/img/#uid#.jpg" alt="gallery-img" loading="lazy">
                                                    <cfelse>
-                                                      <img src="/img/thumbnails/noImage.jfif.jpeg">
+                                                      <img src="/img/thumbnails/noImage.jfif.jpeg" alt="No image" loading="lazy">
                                                 </cfif>
                                                 
                                              </div>

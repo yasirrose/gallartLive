@@ -27,9 +27,9 @@
 				<div class="featured-img">
 					<span itemprop="url">
 						<a href="/artists/#producturl#">
-							<cfset imgFile =  'http://#server_name#/img/thumbnails/' & uid &'.jpg' />
+							<cfset imgFile = expandPath('/img/thumbnails/' & uid & '.jpg') />
 							<cfif fileExists(imgFile)>
-								<span itemprop="image"><img src="/img/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"></span>
+								<span itemprop="image"><img src="/img/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center" loading="lazy"></span>
 								<!--- <img src="/img/thumbnails/#uid#.jpg" alt="#artist_name_alt# - #name#" title="#artist_name_alt# - #name#" border="0" align="center"> --->
 							<cfelse>
 								#artist_name#

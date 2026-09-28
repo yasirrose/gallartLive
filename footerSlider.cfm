@@ -20,7 +20,7 @@
                                           <a HREF="javascript:goxss('/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#')">
                                              <div class="img-sec">
                                                 <!-- Dynamic image source -->
-                                                <cfif fileexists("http://#server_name#/img/#listings.uid#.jpg")>
+                                                <cfif fileexists(expandPath("/img/#listings.uid#.jpg"))>
                                                    <img src="/img/#uid#.jpg" alt="gallery-img">
                                                 <cfelse>
                                                    <img src="/img/thumbnails/noImage.jfif.jpeg">

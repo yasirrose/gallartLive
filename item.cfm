@@ -507,7 +507,7 @@
 															<div>
 																<div class="img-sec">
 
-																	<cfif fileexists("http://#server_name#/img/#productinfo.uid#.jpg")>
+																	<cfif fileexists(expandPath("/img/#productinfo.uid#.jpg"))>
 																		<a data-fancybox="slider-gallery" data-src="/img/#productinfo.uid#.jpg?x=randrange(1,99)" data-caption="Main Image">
 																			<img src="/img/#productinfo.uid#.jpg?x=randrange(1,99)" alt="slider-gallery-img">
 																		</a>
@@ -527,7 +527,7 @@
 
 
 
-																		<cfif fileexists("http://#server_name#/img/#additionalImage#")>
+																		<cfif fileexists(expandPath("/img/#additionalImage#"))>
 
 
 																			<a data-fancybox="slider-gallery" data-src="/img/#additionalImage#?x=randrange(1,99)" data-caption="Main Image">
@@ -574,7 +574,7 @@
 															 	<div class="nav-slide-item">
 																	<div class="img-sec">
 
-																		<cfif fileexists("http://#server_name#/img/#productinfo.uid#.jpg") >
+																		<cfif fileexists(expandPath("/img/#productinfo.uid#.jpg")) >
 																			<img src="/img/#productinfo.uid#.jpg?x=randrange(1,99)" alt="gallery-img">
 																		<cfelse>
 																			<img src="/img/thumbnails/noImage.jfif.jpeg">
@@ -589,7 +589,7 @@
 																	<div>
 																		<div class="nav-slide-item">
 																		<div class="img-sec">
-																			<cfif fileexists("http://#server_name#/img/#additionalImage#")>
+																			<cfif fileexists(expandPath("/img/#additionalImage#"))>
 																			<img src="/img/#additionalImage#?x=randrange(1,99)" alt="gallery-img">
 																			<cfelse>
 																			<img src="/img/thumbnails/noImage.jfif.jpeg">
