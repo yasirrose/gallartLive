@@ -433,8 +433,8 @@
 																				<div class="img-sec">
 																					<!--- <img src="images/Gallery-Art-Map-V2.jpg" alt="image"> --->
 
-																					<cfif fileexists("http://#server_name#/img/thumbnails/#productInfo.uid#.jpg")> 
-																						<IMG SRC="/img/#productInfo.uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#trim(productInfo.modelno)#" align="Center">
+																					<cfif fileexists(expandPath("/img/thumbnails/#productInfo.uid#.jpg"))> 
+																						<IMG SRC="/img/#productInfo.uid#.jpg" width="100" BORDER="0" ALT="#trim(productInfo.modelno)#" align="Center" loading="lazy">
 																						<cfelse>
 																							
 																							<img src="/img/thumbnails/noImage.jfif.jpeg">
