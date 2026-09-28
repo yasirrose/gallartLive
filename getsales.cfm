@@ -86,11 +86,11 @@
                 <td valign="top" align="Center">
                     <a href="/artist/#urlencodedformat(trim(replace(producturl, "'", "")))#/#urlencodedformat(trim(slug))#">
                     
-                        <cfif fileexists("https://#server_name#/img/thumbnails/#uid#.jpg")> 
-                            <IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#trim(modelno)#" align="Center">
+                        <cfif fileexists(expandPath("/img/thumbnails/#uid#.jpg"))> 
+                            <IMG SRC="./img/#uid#.jpg" width="100" BORDER="0" ALT="#trim(modelno)#" align="Center" loading="lazy">
                             <cfelse>
                             
-                                <img src="https://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+                                <img src="/img/thumbnails/noImage.jfif.jpeg" alt="No image" loading="lazy">
                         </cfif>   
                     </a>
                     <br>

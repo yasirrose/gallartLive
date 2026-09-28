@@ -85,15 +85,15 @@
         <Td valign="top" align="Center">
         <A HREF="javascript:goxss('/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#')">
             <!--- <cfset uidd = '20338'> --->
-        <!--- <IMG SRC="http://23.20.226.157/img/#uidd#.jpg?x=randrange(1,99)"  width="100" BORDER="0" ALT="#trim(modelno)#" align="Center"> 
+        <!--- <IMG SRC="https://gallart.com/img/#uidd#.jpg?x=randrange(1,99)"  width="100" BORDER="0" ALT="#trim(modelno)#" align="Center"> 
         
          SRC="./img/thumbnails/#uid#.jpg?x=randrange(1,99)"
         --->
-        <cfif fileexists("http://#server_name#/img/thumbnails/#uid#.jpg")> 
-            <IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#trim(modelno)#" align="Center">
+        <cfif fileexists(expandPath("/img/thumbnails/#uid#.jpg"))> 
+            <IMG SRC="./img/#uid#.jpg" width="100" BORDER="0" ALT="#trim(modelno)#" align="Center" loading="lazy">
             <cfelse>
                 <!--- <img src="https://dummyimage.com/150x100/050005/ededf2.png&text=No+Image+Available+"> --->
-                <img src="/img/thumbnails/noImage.jfif.jpeg">
+                <img src="/img/thumbnails/noImage.jfif.jpeg" alt="No image" loading="lazy">
         </cfif>   
         </A>
         <Br>

@@ -268,8 +268,8 @@
 																		#artist_name#
 																	</td>
 																	<td align="center" valign="middle">
-																		<cfif fileexists("http://#server_name#/img/thumbnails/#wishlistData.uid#.jpg")> 
-																			<IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#wishlistData.uid#" align="Center" style="max-height: 100px;">
+																		<cfif fileexists(expandPath("/img/thumbnails/#wishlistData.uid#.jpg"))> 
+																			<IMG SRC="./img/#uid#.jpg" width="100" BORDER="0" ALT="#wishlistData.uid#" align="Center" style="max-height: 100px;" loading="lazy">
 																			<cfelse>
 																				<img src="/img/thumbnails/noImage.jfif.jpeg">
 																		</cfif>
@@ -348,8 +348,8 @@
 																		#artist_name#
 																	</td>
 																	<td align="center" valign="middle">
-																		<cfif fileexists("http://#server_name#/img/thumbnails/#getSellerRecord.uid#.jpg")> 
-																			<IMG SRC="./img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#getSellerRecord.uid#" align="Center">
+																		<cfif fileexists(expandPath("/img/thumbnails/#getSellerRecord.uid#.jpg"))> 
+																			<IMG SRC="./img/#uid#.jpg" width="100" BORDER="0" ALT="#getSellerRecord.uid#" align="Center" loading="lazy">
 																			<cfelse>
 																				<img src="/img/thumbnails/noImage.jfif.jpeg">
 																		</cfif>

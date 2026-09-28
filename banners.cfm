@@ -31,7 +31,7 @@
         height: auto; /* Maintain aspect ratio */
         max-height: 400px; /* Set max height */
         object-fit: cover; /* Ensure images cover the entire slide area */
-        high resolution images
+        /* high resolution images */
     }
 
     .prev, .next {
@@ -115,6 +115,3 @@
         slides[slideIndex - 1].style.display = 'block';
     }
 </script>
-
-</body>
-</html>
