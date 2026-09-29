@@ -151,9 +151,6 @@
 	   </script>
 	   </cfoutput>
 	   </cfif>
-
-	   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-	   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 	   <cfoutput>
 		  <script language="JavaScript" src="/js/utils.js"></script>
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

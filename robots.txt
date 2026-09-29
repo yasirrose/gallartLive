@@ -16,6 +16,7 @@ Disallow: /forgot_password.cfm
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /sitemap.xml
+Allow: /Sitemap.xml
 Allow: /
 
 # AI search, answer engines, and LLM crawlers
@@ -49,6 +50,8 @@ Disallow: /forgot_password.cfm
 Allow: /llms.txt
 Allow: /llms-full.txt
 Allow: /sitemap.xml
+Allow: /Sitemap.xml
 Allow: /
 
 Sitemap: https://gallart.com/sitemap.xml
+Sitemap: https://gallart.com/Sitemap.xml
