@@ -121,7 +121,7 @@ a.SeeMore:hover {
 
 </script>
 
-<!-- BEGIN ROBLY WIDGET CODE -->
+<!--- <!-- BEGIN ROBLY WIDGET CODE -->
 <script type='text/javascript'>
   var _d_site = _d_site || 'ebb8c5f7da7077e127988b3276107648';
   (function(w, d, p, s, s2) {
@@ -130,7 +130,7 @@ a.SeeMore:hover {
     s2 = d.getElementsByTagName('script')[0]; s2.parentNode.insertBefore(s, s2);
   })(window, document, 'Robly');
 </script>
-<!-- END ROBLY WIDGET CODE -->
+<!-- END ROBLY WIDGET CODE --> --->
 
 </head>
 <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
@@ -229,10 +229,10 @@ a.SeeMore:hover {
 															<a href="/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#">
 																<!--- <cfset uidd = '20338'> --->
 															
-																<cfif fileexists("https://#server_name#/img/thumbnails/#uid#.jpg") >
-																	<IMG SRC="/img/#uid#.jpg?x=randrange(1,99)"   width="100" BORDER="0" ALT="#trim(modelno)#" align="Center">
+																<cfif fileexists(expandPath("/img/thumbnails/#uid#.jpg")) >
+																	<IMG SRC="/img/#uid#.jpg" width="100" BORDER="0" ALT="#trim(modelno)#" align="Center" loading="lazy">
 																<cfelse>
-																	<img src="https://#server_name#/img/thumbnails/noImage.jfif.jpeg">
+																	<img src="/img/thumbnails/noImage.jfif.jpeg" alt="No image" loading="lazy">
 																</cfif>												
 															</a>
 															<br>
