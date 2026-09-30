@@ -78,7 +78,7 @@
         <cfoutput query="qGetBanners">
             <div class="slide">
                 <a href="javascript:goxss('#HTMLEditFormat(BANNERIMAGESURL)#')">
-                    <img src="/images/banners/#bannerImage#" alt="Banner Image" width="1145" height="400" decoding="async"<cfif currentRow EQ 1> fetchpriority="high" loading="eager"</cfif>>
+                    <img src="/images/banners/#bannerImage#" alt="Banner Image" width="1145" height="400" decoding="async"<cfif currentRow EQ 1> fetchpriority="high" loading="eager"<cfelse> loading="lazy"</cfif>>
                 </a>
             </div>
         </cfoutput>

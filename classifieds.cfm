@@ -509,9 +509,7 @@
 
 
             function gotoTopFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
 
 
