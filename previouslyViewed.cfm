@@ -21,10 +21,9 @@
             // Set the updated cookie (valid for 7 days)
             document.cookie = `RecentViewlistItem=${encodeURIComponent(updatedRecentViewlist)}; path=/; max-age=${7 * 24 * 60 * 60};`;
 
-            // Optional: Notify the user or perform any action if needed
-            console.log("Item added to wishlist!");
+            // console.log("Item added to wishlist!");
         } else {
-            console.log("Item is already in the wishlist.");
+            // console.log("Item is already in the wishlist.");
         }
     });
 </script>
