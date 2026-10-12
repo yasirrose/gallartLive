@@ -27,8 +27,6 @@
         trigger.addEventListener("click", toggleModal);
         closeButton.addEventListener("click", toggleModal);
         window.addEventListener("click", windowOnClick);
-    } else {
-        console.error("One or more elements not found!");
     }
 	});
 

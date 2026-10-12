@@ -61,14 +61,9 @@
                    
                     if (form) {
                         var select = form.elements[selectName];
-                        console.log('yes'+selectName);
-                        if (select) {
+                        if (select && select.selectedIndex >= 0) {
                             parent.location = gothere + select.options[select.selectedIndex].value;
-                        } else {
-                            console.error("Select element '" + selectName + "' not found.");
                         }
-                    } else {
-                        console.error("Form 'dropdown' not found.");
                     }
                     return true;
                 }
@@ -548,9 +543,6 @@
 			// If artist is obtained through URL params, set Artist to urlArtist
 				Artist = urlArtist;
 			}
-			
-			console.log('Manufacturer:', Manufacturer);
-			console.log('Artist:', Artist);
 			
 			$.ajax({
 			url: 'getsales.cfm',

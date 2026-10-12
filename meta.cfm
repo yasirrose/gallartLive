@@ -163,8 +163,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <link rel="canonical" href="#HTMLEditFormat(canonicalUrl)#">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preconnect" href="https://code.jquery.com" crossorigin>
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="#HTMLEditFormat(application.siteName)#">

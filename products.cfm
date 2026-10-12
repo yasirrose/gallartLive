@@ -378,13 +378,8 @@
 				finalURL += "&Size=" + sizeParam;
 			}
 	
-			console.log("Current URL:", window.location.href);
-			console.log("Final URL:", finalURL);
-	
 			document.frm.action = finalURL;
 			document.frm.submit();
-		} else {
-			console.error('Form or select element not found.');
 		}
 	}
 	
@@ -553,7 +548,6 @@
         loading = true;
         $('#loading').show();
         let currentUrl = window.location.href;
-        console.log(currentUrl);
 
         let url = new URL(window.location.href);
         let params = new URLSearchParams(url.search);
@@ -598,8 +592,6 @@
         if (queryParams.length > 0) {
             ajaxUrl += `?${queryParams.join('&')}`;
         }
-        console.log('Manufacturer:', Manufacturer);
-
         $.ajax({
             url: '/fetch_products.cfm',
             type: 'GET',

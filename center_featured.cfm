@@ -9,6 +9,20 @@
 
 <cfset columns =3>
 
+<style>
+	.featured-work-content .featured-row,
+	.content-section .banner-section .featured-work-content .bottom-content .featured-row {
+		row-gap: 20px !important;
+	}
+	.featured-work-content .featured-item .featured-heading,
+	.content-section .banner-section .featured-work-content .bottom-content .featured-row .featured-item .featured-heading {
+		padding: 10px 5px !important;
+	}
+	.featured-work-content .featured-item .featured-heading .featured-title,
+	.content-section .banner-section .featured-work-content .bottom-content .featured-row .featured-item .featured-heading .featured-title {
+		margin-bottom: 0 !important;
+	}
+</style>
 <div>
 	<div class="featured-row">
 	<cfset i = 0>
