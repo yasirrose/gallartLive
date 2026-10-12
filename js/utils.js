@@ -17,7 +17,6 @@ function popUpWin(url) {
 
 function gonext(url){
 	var next = document.pagination_form.pagego.options[document.pagination_form.pagego.selectedIndex].value;
-console.log(next);
 	document.frm.action = url + next;
 	document.frm.submit();
 }
