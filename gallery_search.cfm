@@ -26,7 +26,7 @@
 				var form = document.forms['dropdownSearch'];
 				if (form) {
 					var select = form.elements[selectName];
-					if (select) {
+					if (select && select.selectedIndex >= 0) {
 						let value = select.options[select.selectedIndex].value;
 
 						// Sanitize: trim, remove dangerous chars, replace slashes with hyphens, replace spaces with +
@@ -42,11 +42,7 @@
 						// Build the sanitized URL and redirect
 						parent.location = gothere + encodedValue;
 
-					} else {
-						console.error("Select element '" + selectName + "' not found.");
 					}
-				} else {
-					console.error("Form 'dropdown' not found.");
 				}
 				return true;
 			}

@@ -26,13 +26,9 @@
 				var form = document.forms['dropdownSearchforProducts'];
 				if (form) {
 					var select = form.elements[selectName];
-					if (select) {
+					if (select && select.selectedIndex >= 0) {
 						parent.location = gothere + select.options[select.selectedIndex].value;
-					} else {
-						console.error("Select element '" + selectName + "' not found.");
 					}
-				} else {
-					console.error("Form 'dropdown' not found.");
 				}
 				return true;
 			}

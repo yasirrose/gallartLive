@@ -584,7 +584,6 @@
 	}
 
 	function disableSubmitBtn() {
-		console.log('test 1: ')
 		const btn = document.getElementById('submitBtn');
 		btn.disabled = true;          // disable button immediately
 		btn.value = 'Processing…';    // optional: change text

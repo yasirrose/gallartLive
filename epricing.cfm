@@ -636,8 +636,6 @@
 				const emailRegex = /\S+@\S+\.\S+/;
 				const recaptcha = grecaptcha.getResponse();
 
-				console.log('test: ' + name)
-
 				if (!recaptcha) {
 					document.getElementById("m_recaptchaError").textContent = "Please confirm you are not a robot.";
 					isValid = false;

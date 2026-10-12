@@ -569,7 +569,6 @@
     		S_submitBtn.textContent = "Processing...";
 
           var recaptcha = grecaptcha.getResponse();
-			 console.log(recaptcha.length);
           
          if (recaptcha.length == 0) {
                document.getElementById("S_recaptchaError").innerText = "Please confirm you are not a robot.";

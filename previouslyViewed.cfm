@@ -235,8 +235,7 @@
       var addData = $("#addData").val();
       
 
-      console.log('product_id: ' + productID)
-      console.log('User_ID: ' + userID)
+
       
 
       $.ajax({
@@ -248,7 +247,6 @@
                addData: addData
          },
          success: function (response) {
-            console.log(response);
             
             $("#pre_heartIcon_" + id).css("color", "red");
             if(response == 'Your artwork has been added to your Wishlist '){
@@ -280,7 +278,6 @@
                dataType: "json",
                success: function (response) {
                   if(response.status == "success") {
-                     console.log("Updated Wishlist ID: ", response.pk_id);
                      // deleteWishListdata(response.pk_id);
                      $("#pre_addWishButtonnn_" + id).attr("onclick", "pre_deleteWishListdata('" + response.pk_id + "')");
                   }
@@ -301,7 +298,6 @@
 
            // console.log('product_id: ' + productID)
            // console.log('User_ID: ' + userID)
-           console.log('wishlist_pk_id: ' + wishlist_pk_id)
 
            $.ajax({
               url: "/inquiry.cfm", // ColdFusion file handling the request
@@ -312,7 +308,6 @@
                },
                dataType: "json",
               success: function (response) {
-                 console.log(response.message);
                  
                 
                  if(response.status == 'success'){

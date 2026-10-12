@@ -163,8 +163,6 @@ order by path
 				}
 			}
 
-				console.log(`Final URL: ${url}`);
-
 				window.location.href = url;
 			});
 		});

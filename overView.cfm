@@ -448,8 +448,6 @@
 
 			var wishlist_pk_id = $(button).closest("form").find("#wishlist_pk_id").val();
 
-			console.log(wishlist_pk_id);
-
             if(confirm("Are you sure you want to delete this item?")){
 
 				$.ajax({

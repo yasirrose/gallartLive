@@ -1411,7 +1411,6 @@
 
 
 			function setActiveTab(tabName) {
-				console.log(`Active tab: ${tabName}`);
 
 				// Store active tab in localStorage
 				localStorage.setItem("activeTab", tabName);
@@ -1490,8 +1489,6 @@
 			let recaptcha = grecaptcha.getResponse(generalWidgetId);
 
 			const submitButton = document.getElementById('G_submitbtn');
-
-			console.log(phoneType);
 
 			if (!fname) {
 				document.getElementById('G_fnameError').textContent = 'Please fill in your first name.';
@@ -1663,8 +1660,6 @@
 
 			S_submitBtn.disabled = true;
 			S_submitBtn.textContent = "Processing...";
-
-			console.log('test type: ' + S_phoneType);
 			
 			if (recaptcha.length == 0) {
 				document.getElementById("S_recaptchaError").innerText = "Please confirm you are not a robot.";

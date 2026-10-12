@@ -187,7 +187,6 @@ ul.sub-menu {
 <script>
     function clearActiveTab() {
         // Clear the 'activeTab' key from localStorage
-		console.log('test');
         localStorage.removeItem('activeTab');
     }
 </script>
