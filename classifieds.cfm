@@ -52,14 +52,9 @@
             
                 if (form) {
                     var select = form.elements[selectName];
-                    console.log('yes'+selectName);
-                    if (select) {
+                    if (select && select.selectedIndex >= 0) {
                         parent.location = gothere + select.options[select.selectedIndex].value;
-                    } else {
-                        console.error("Select element '" + selectName + "' not found.");
                     }
-                } else {
-                    console.error("Form 'dropdown' not found.");
                 }
                 return true;
             }
@@ -82,13 +77,7 @@
     <!---<script id="scripts" type="text/javascript" src="/scripts_887a5339b2625a8970658c4f5f9bd94f1067ab7a.js"></script>--->
     <meta name="referrer" content="same-origin" />
 
-	<link rel="icon" sizes="16x16" type="image/png" href=/assets/favicon_16.png />
-	<link rel="icon" sizes="32x32" type="image/png" href=/assets/favicon_32.png />
-	<link rel="icon" sizes="any" type="image/svg+xml" href=/assets/favicon.svg />
-    <title>Techleadz</title>
-    <meta name="application-name" content="Techleadz">
-    <meta name="apple-mobile-web-app-title" content="Techleadz">
-    <meta http-equiv="content-language" content=""><meta name="language" content="">
+	<link rel="shortcut icon" href="/favicon.ico">
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="msvalidate.01" content="">
     <meta name="google-site-verification" content="">
@@ -577,9 +566,6 @@
 
             Artist = urlArtist;
         }
-
-        console.log('Manufacturer:', Manufacturer);
-        console.log('Artist:', Artist);
 
         $.ajax({
         url: 'getclassifieds.cfm',
