@@ -301,7 +301,6 @@
 					}
 					})
 					.catch((error) => {
-						console.error('Error:', error);
 						document.getElementById('responseMessage').innerHTML = `<strong style="color:red;">An error occurred. Please try again later.</strong>`;
 
 						sendBtn.disabled = false;

@@ -246,7 +246,6 @@ if (!recaptchaResponse) {
 		document.getElementById('errorMessage').textContent = 'An error occurred. Please try again.';
 					grecaptcha.reset();
 					document.getElementById('recaptchaError').textContent = 'Please verify reCAPTCHA again.';
-		console.error('Error:', error);
 		loginBtn.disabled = false;
 		loginBtn.textContent = 'Sign In';
 	});
