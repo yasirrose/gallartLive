@@ -1,3 +1,4 @@
+<cfset request.homepageUsesModernJQuery = true>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <cfparam name="xss" default="">
 <cfset pageTitle = "Buy and Sell Fine Art | Gallart">
@@ -20,11 +21,12 @@
 	</cfif>
 	<link href="/css/photogallery.css" rel="stylesheet" type="text/css">
 	<script language="JavaScript" src="/js/utils.js"></script>
-	<script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.bgpos.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.bgpos-public.js?v=20261016"></script>
 	<script type="text/javascript" src="/js/jquery.cross-slide.min.js"></script>
-    <script language="JavaScript" src="/js/slimbox2.js"></script>
+    <script language="JavaScript" src="/js/slimbox2-public.js?v=20261016"></script>
 	<link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">
+	<script src="/js/homepage-modal.js?v=20261016" defer></script>
 </cfoutput>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <cfquery name="qSlideshow" datasource="#application.dsource#">
@@ -810,25 +812,6 @@ a.SeeMore:hover {
 		display: block;
 	}
 </style>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-    // Check if the modal has already been shown using localStorage
-    window.onload = () => {
-        // If modal is not shown yet, show it
-        if (!localStorage.getItem("modalShown")) {
-            $('#onload').modal('show');
-            localStorage.setItem("modalShown", "true"); // Store that modal has been shown
-        }
-
-        // Close the modal when clicking anywhere on the page
-        $(document).click(function (e) {
-            if (!$(e.target).closest('#onload').length) {
-                // If click is outside the modal, hide it and set the localStorage flag
-                $('#onload').modal('hide');
-            }
-        });
-    }
-</script>
 <script>
 	window.onscroll = function() {scrollFunction()};
 

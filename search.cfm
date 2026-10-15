@@ -1,4 +1,8 @@
+<cfif structKeyExists(request, "homepageUsesModernJQuery") AND request.homepageUsesModernJQuery>
+<script type="text/javascript" src="/js/thickbox-public.min.js?v=20261016"></script>
+<cfelse>
 <script type="text/javascript" src="../js/thickbox-compressed.js"></script>
+</cfif>
 <link rel="stylesheet" href="../css/thickbox.min.css" type="text/css" media="screen" />
 <style>
 	#TB_ajaxContent.TB_modal {

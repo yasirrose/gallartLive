@@ -2,6 +2,11 @@ RewriteEngine On
 RewriteBase /
 Options +FollowSymLinks
 
+# Block sensitive root files and maintenance sources without changing /admin routes.
+# These rules deny HTTP downloads only; they do not remove certificates from disk.
+RewriteRule ^(?:\.git|\.agents|\.codex|\.aws|tests|tools|docs)(?:/|$) - [F,L,NC]
+RewriteRule ^(?:gallart_2022\.(?:pem|pfx)|admin_data_(?:export|Gallart_Inventory_Listing_20240205)\.csv|\.index\.cfm\.sw[a-z]|cfmail\.txt)$ - [F,L,NC]
+
 # Force HTTPS, including proxy-terminated SSL, and canonicalize to the primary host.
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
