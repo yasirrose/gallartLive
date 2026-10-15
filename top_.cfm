@@ -1,4 +1,4 @@
-<link href="/stylesheet_print.css?x=<cfoutput>#RandRange(0,1000)#</cfoutput>" rel="stylesheet" type="text/css" media="print" />
+<link href="/stylesheet_print.css?v=<cfoutput>20261016</cfoutput>" rel="stylesheet" type="text/css" media="print" />
 <!--- <cfoutput>
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
