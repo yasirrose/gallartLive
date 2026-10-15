@@ -1,5 +1,9 @@
 
 
+<cfheader name="Cache-Control" value="no-cache, no-store, must-revalidate">
+<cfheader name="Pragma" value="no-cache">
+<cfheader name="Expires" value="0">
+
 <cfset fullURL = ""> <!-- Declare first -->
 <!--- <cfparam name="url.slug" default=""> --->
 <cfsilent>
@@ -173,22 +177,53 @@
 			<script type="text/javascript">
 				// Ensure document is fully loaded before initializing slick
 				$(document).ready(function() {
-				// Initialize the slick slider
-					$('.slider-for').slick({
+					var $sliderFor = $('.slider-for');
+					var $sliderNav = $('.slider-nav');
+
+					// Initialize the main image slider
+					$sliderFor.slick({
 						slidesToShow: 1,
 						slidesToScroll: 1,
 						arrows: false,
 						fade: true,
-						asNavFor: '.slider-nav',
-					
+						infinite: false
 					});
-				
-					$('.slider-nav').slick({
+
+					// Initialize thumbnail navigation slider
+					$sliderNav.slick({
 						slidesToShow: 3,
 						slidesToScroll: 1,
-						asNavFor: '.slider-for',
 						dots: false,
-						focusOnSelect: true
+						infinite: false,
+						arrows: false
+					});
+
+					// Direct click handler: handles thumbnail clicks cleanly and reliably
+					$sliderNav.on('click', '.slick-slide', function(e) {
+						e.preventDefault();
+						e.stopPropagation();
+						var idx = $(this).attr('data-slick-index');
+						if (idx === undefined || idx === null) {
+							idx = $(this).index();
+						}
+						idx = parseInt(idx, 10);
+						if (!isNaN(idx)) {
+							$sliderFor.slick('slickGoTo', idx);
+							$sliderNav.find('.slick-slide').removeClass('slick-current slick-active');
+							$(this).addClass('slick-current slick-active');
+						}
+					});
+
+					// Keep thumbnails in sync when main slide changes
+					$sliderFor.on('afterChange', function(event, slick, currentSlide) {
+						$sliderNav.find('.slick-slide').removeClass('slick-current slick-active');
+						$sliderNav.find('.slick-slide[data-slick-index="' + currentSlide + '"]').addClass('slick-current slick-active');
+					});
+
+					// Recalculate dimensions on window resize or orientation change
+					$(window).on('resize orientationchange', function() {
+						$sliderFor.slick('setPosition');
+						$sliderNav.slick('setPosition');
 					});
 				
 				// Additional slick carousel functionality
@@ -225,23 +260,184 @@
 				});
 			</script>
 	   </cfoutput>
-	   <link href="/stylesheet_.min.css?v=20260817" rel="stylesheet" type="text/css">
+	   <link href="/stylesheet_.min.css?v=20261007" rel="stylesheet" type="text/css">
 	   <style>
-		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-list.draggable .slick-slide .img-sec a {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for {
+			height: 550px !important;
+			max-height: 550px !important;
 		}
-		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-list.draggable .slick-slide .img-sec img,
-		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-list.draggable .slick-slide .nav-slide-item .img-sec img {
-			display: block;
-			width: auto;
-			height: auto;
-			max-width: 100%;
-			max-height: 100%;
-			object-fit: contain;
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-list,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-track {
+			height: 100% !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide {
+			background: #fff !important;
+			height: 520px !important;
+			min-height: 520px !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			border: 1px solid #d5c8c8 !important;
+			border-radius: 6px !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec {
+			width: 100% !important;
+			height: 100% !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec a {
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			width: 100% !important;
+			height: 100% !important;
+			max-height: 520px !important;
+		}
+		.thumbnails-slider-sec .slider-for img,
+		.thumbnails-slider-sec .slider.slider-for img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec a img {
+			display: block !important;
+			width: auto !important;
+			height: auto !important;
+			max-width: 100% !important;
+			max-height: 500px !important;
+			object-fit: contain !important;
+			margin: 0 auto !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav {
+			height: 110px !important;
+			max-height: 110px !important;
+			margin-top: 15px !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-list,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-track {
+			height: 100% !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide {
+			background: #fff !important;
+			height: 100px !important;
+			max-height: 100px !important;
+			cursor: pointer !important;
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide .nav-slide-item {
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			overflow: hidden !important;
+			height: 90% !important;
+			width: 90% !important;
+			border-radius: 4px !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide.slick-current .nav-slide-item,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide.slick-active.slick-current .nav-slide-item {
+			background: #fff !important;
+			border: 2px solid #000 !important;
+		}
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide .nav-slide-item .img-sec {
+			display: flex !important;
+			align-items: center !important;
+			justify-content: center !important;
+			height: 100% !important;
+			width: 100% !important;
+			overflow: hidden !important;
+		}
+		.thumbnails-slider-sec .slider-nav img,
+		.thumbnails-slider-sec .slider.slider-nav img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide img,
+		.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide .nav-slide-item .img-sec img {
+			display: block !important;
+			width: auto !important;
+			height: auto !important;
+			max-width: 100% !important;
+			max-height: 80px !important;
+			object-fit: contain !important;
+			margin: 0 auto !important;
+		}
+		@media (max-width: 1400px) {
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for {
+				height: 450px !important;
+				max-height: 450px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide {
+				height: 430px !important;
+				min-height: 430px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec a {
+				max-height: 430px !important;
+			}
+			.thumbnails-slider-sec .slider-for img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec img {
+				max-height: 420px !important;
+			}
+		}
+		@media (max-width: 575px) {
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for {
+				height: 350px !important;
+				max-height: 350px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide {
+				height: 330px !important;
+				min-height: 330px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec a {
+				max-height: 330px !important;
+			}
+			.thumbnails-slider-sec .slider-for img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec img {
+				max-height: 320px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav {
+				height: 90px !important;
+				max-height: 90px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide {
+				height: 80px !important;
+				max-height: 80px !important;
+			}
+			.thumbnails-slider-sec .slider-nav img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide .nav-slide-item .img-sec img {
+				max-height: 60px !important;
+			}
+		}
+		@media (max-width: 420px) {
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for {
+				height: 270px !important;
+				max-height: 270px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide {
+				height: 250px !important;
+				min-height: 250px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec a {
+				max-height: 250px !important;
+			}
+			.thumbnails-slider-sec .slider-for img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-for .slick-slide .img-sec img {
+				max-height: 240px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav {
+				height: 75px !important;
+				max-height: 75px !important;
+			}
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide {
+				height: 65px !important;
+				max-height: 65px !important;
+			}
+			.thumbnails-slider-sec .slider-nav img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide img,
+			.thumbnails-slider-sec .thumbnails-slider .slider.slider-nav .slick-slide .nav-slide-item .img-sec img {
+				max-height: 50px !important;
+			}
 		}
 	   </style>
 	   <script type="text/javascript">
@@ -551,7 +747,7 @@
 													   <script>
 															$(document).ready(function () {
 																// Initialize FancyBox for the slider images
-																$('slider-for').find('[data-fancybox="slider-gallery"]').fancybox({
+																$('.slider-for').find('[data-fancybox="slider-gallery"]').fancybox({
 																	buttons: [
 																		"zoom",
 																		"slideShow",
