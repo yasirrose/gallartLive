@@ -9,6 +9,23 @@
         }
 
         var modal = window.bootstrap.Modal.getOrCreateInstance(element);
+        var previousFocus = null;
+        element.addEventListener("show.bs.modal", function () {
+            previousFocus = document.activeElement;
+        });
+        element.addEventListener("hide.bs.modal", function (event) {
+            if (!event.defaultPrevented && element.contains(document.activeElement)) {
+                // Release focus before Bootstrap hides the modal from assistive technology.
+                document.activeElement.blur();
+            }
+        });
+        element.addEventListener("hidden.bs.modal", function () {
+            // Restore keyboard position after Bootstrap has deactivated its focus trap.
+            if (previousFocus && previousFocus.isConnected &&
+                    !element.contains(previousFocus)) {
+                previousFocus.focus({ preventScroll: true });
+            }
+        });
         // Check if the modal has already been shown using localStorage
         var alreadyShown = false;
         try {

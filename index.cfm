@@ -26,7 +26,7 @@
 	<script type="text/javascript" src="/js/jquery.cross-slide.min.js"></script>
     <script language="JavaScript" src="/js/slimbox2-public.js?v=20261016"></script>
 	<link href="/css/slimbox2.min.css" rel="stylesheet" type="text/css">
-	<script src="/js/homepage-modal.js?v=20261016" defer></script>
+	<script src="/js/homepage-modal.js?v=20261017" defer></script>
 </cfoutput>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <cfquery name="qSlideshow" datasource="#application.dsource#">
@@ -665,7 +665,7 @@ a.SeeMore:hover {
 										By signing up, you agree to Gallart’s
 										<a href="/privacy">Privacy Policy</a> 
 										and 
-										<a href="/shipping-policy">Terms of Use</a>
+										<a href="/terms">Terms of Use</a>
 									</p>
 									</div>
 									<div class="form-btn">
