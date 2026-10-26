@@ -80,7 +80,7 @@
 						<div class="row input-form">
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 									<div class="select-option input-field">
-										<select name="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" onChange="drop('/artists/subject/', 'artSubject')">
+										<select name="artSubject" class="chosen-select m-0" data-placeholder="Search by Subject" aria-label="Search by Subject" onChange="drop('/artists/subject/', 'artSubject')">
 											<option value="">Search by Subject</option>
 											<!--- Loop through the query results to create option tags --->
 											<cfoutput query="qEmployees">
@@ -97,7 +97,7 @@
 								</cfquery>
 								<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 									<div class="select-option input-field">
-										<select name="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" onChange="drop('/artists/style/', 'artStyle')">
+										<select name="artStyle" class="chosen-select m-0" data-placeholder="Search by Style" aria-label="Search by Style" onChange="drop('/artists/style/', 'artStyle')">
 											<option value="">Search by Style</option>
 											<cfoutput query="qGetStyle">
 												<option value="#filterName#">#filterName#</option>
@@ -127,7 +127,7 @@
 								</cfquery>
 							<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 								<div class="select-option input-field">
-									<select name="artSize" class="chosen-select m-0" data-placeholder="Search by Size" onChange="drop('/artists/size/', 'artSize')">
+									<select name="artSize" class="chosen-select m-0" data-placeholder="Search by Size" aria-label="Search by Size" onChange="drop('/artists/size/', 'artSize')">
 										<option value="">Search by Size</option>
 										<cfoutput query="qGetSize">
 											<option value="#filterName#">#filterName#</option>
@@ -147,7 +147,7 @@
 							</cfquery>
 							<div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
 								<div class="select-option input-field">
-									<select name="artType" class="chosen-select m-0" data-placeholder="Search by Type" onChange="drop('/artists/type/', 'artType')">
+									<select name="artType" class="chosen-select m-0" data-placeholder="Search by Type" aria-label="Search by Type" onChange="drop('/artists/type/', 'artType')">
 										<option value="">Search by Type</option>
 										<cfoutput query="qGetType">
 											<option value="#filterName#">#filterName#</option>

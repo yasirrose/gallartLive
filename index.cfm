@@ -6,6 +6,7 @@
 <cfset pageCanonicalPath = "/">
 <html lang="en">
 <head>
+<link rel="preload" href="/stylesheet_.min.css?v=1" as="style">
 <cfoutput>
 <title>#companyname# - #titletext#</title>
 </cfoutput>
@@ -179,7 +180,7 @@ a.SeeMore:hover {
 										</div>
 										<div class="featured-work-content" style="background-color:#F2F2F2; border-radius:10px;">
 											<div class="top-heading home-page-heading">
-												<h1 style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">FEATURED ARTISTS</h1>
+												<h2 class="h1" style="font-size: 25px; line-height: 30px; font-weight: 700; color: ##000 !important; display: inline-block; padding: 4px; margin-top: 10px; border-radius: 10px;">FEATURED ARTISTS</h2>
 											</div>
 											<div class="bottom-content">
 												<div class="product-items">
@@ -374,7 +375,7 @@ a.SeeMore:hover {
 											<cfoutput>
 												<div class="see-more-sec">
 													<a href="/recent-acquisitions" class="SeeMore">
-														<span>See More</span>
+														<span>See More<span class="visually-hidden"> recent acquisitions</span></span>
 														<i class="fa fa-arrow-right" aria-hidden="true"></i>
 													</a>
 												</div>
@@ -452,7 +453,7 @@ a.SeeMore:hover {
 														<td valign="top" align="Center">
 															<a href="/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#">
 																
-																<img src="https://#server_name#/img/#uid#.jpg"  width="100" BORDER="0" ALT="#trim(modelno)#" align="Center">
+																<img src="https://#server_name#/img/#uid#.jpg"  width="100" BORDER="0" ALT="#trim(modelno)#" align="Center" loading="lazy">
 															</a>
 															<br>
 															<a href="/artist/#urlencodedformat(trim(replace(producturl,"'","")) )#/#urlencodedformat(trim(slug))#">
@@ -593,7 +594,7 @@ a.SeeMore:hover {
 											<cfoutput>
 												<div class="see-more-sec">
 													<a href="/sale-items" class="SeeMore">
-														<span>See More</span>
+														<span>See More<span class="visually-hidden"> artworks on sale</span></span>
 														<i class="fa fa-arrow-right" aria-hidden="true"></i>
 													</a>
 												</div>
@@ -649,7 +650,7 @@ a.SeeMore:hover {
 					<div class="modal-body pt-0">
 						<div class="inner-content">
 							<div class="top-image">
-								<img src="/images/G-Logowhite.png" alt="logo" />
+								<img src="/images/G-Logowhite.png" alt="logo" width="1060" height="1332" style="height:auto" />
 							</div>
 							<h2 id="onloadModalTitle">Stay in touch</h2>
 							<p id="onloadModalDescription">Be the first to know about Gallery Art's upcoming events, recent acquisitions and sales.</p>
