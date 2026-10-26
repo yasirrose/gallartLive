@@ -23,7 +23,7 @@ function helpWin(url) {
 	<div class="top-conteiner">
 		<div class="site-logo">
 			<a href="/">
-				<img src="/images/top_01.jpg" alt="Gallery Art - Buying & Selling Fine Art & Collections">
+				<img src="/images/top_01.jpg" alt="Gallery Art - Buying & Selling Fine Art & Collections" width="634" height="123" style="height:auto">
 			</a>
 		</div>
 		<!--- <div class="mailto">

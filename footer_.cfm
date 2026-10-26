@@ -66,7 +66,7 @@
 							<div class="footer-menu">
 									<div class="map-image">
 										<a href="https://maps.app.goo.gl/MZniVSbiddj1X1vWA" target="_blank">
-											<img src="/images/Gallery-Art-Map-V2.jpg" alt="Gallery Art Location Map" loading="lazy">
+											<img src="/images/Gallery-Art-Map-V2.jpg" alt="Gallery Art Location Map" loading="lazy" width="257" height="230">
 										</a>
 									</div>								
 							</div>
