@@ -100,12 +100,12 @@
 				<input type="hidden" name="redirect" value="<cfoutput>#url.redirect#</cfoutput>">
 				<div class="input-form">
 				   <div class="input-field">
-					  <label><strong>Email Address: <span style="color: #ff0000;">* </span></strong></label>
+					  <label for="email"><strong>Email Address: <span style="color: #ff0000;">* </span></strong></label>
 					  <input type="text" id="email" name="email" maxlength="50">
 					  <span class="error-message" id="email_loginError"></span>
 				   </div>
 				   <div class="input-field text-left">
-					  <label><strong>Password: <span style="color: #ff0000;">* </span></strong></label>
+					  <label for="password"><strong>Password: <span style="color: #ff0000;">* </span></strong></label>
 					  <input type="password" id="password" name="password" maxlength="50">
 					  <span class="error-message" id="passwordError"></span>
 				   </div>

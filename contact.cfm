@@ -336,7 +336,7 @@
 
 														<div class="col-md-6">
 															<div class="input-field">
-																<select name="phoneType" id="phoneType" >
+																<select name="phoneType" id="phoneType" aria-label="Phone type" >
 																	<option value="Cell Phone">Cell Phone</option>
 																	<option value="Home Phone">Home Phone</option>
 																	<option value="Business Phone">Business Phone</option>

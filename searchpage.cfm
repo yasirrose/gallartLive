@@ -8,7 +8,7 @@
 	order by path
 </cfquery>
 
-<html>
+<html lang="en">
 	<head>
 		<cfoutput>
 			<title>#companyname# - #titletext#</title>
@@ -100,7 +100,7 @@
 													<form id="simpleSearchForm">
 														<div class="input-form">
 															<div class="input-field">
-																<input type="text" name="keywords" id="keywords">
+																<input type="text" name="keywords" id="keywords" aria-label="Search keywords">
 															</div>
 															<div class="input-button">
 																<button type="submit" class="SeeMore">Search</button>

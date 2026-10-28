@@ -10,7 +10,7 @@
    group by path
    order by path
 </CFQUERY>
-<html>
+<html lang="en">
    <head>
       <cfoutput>
          <title>#companyname# - #titletext#</title>
